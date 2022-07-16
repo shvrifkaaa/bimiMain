@@ -1,23 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 auto;
+}
+
 header {
 
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 10px 0 ;
+}
+
+header .header-logo-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    height: fit-content;
     justify-content: space-around;
+}
 
-    width: 100%;
+header .header-logo-name img {
+    width: 65px;
+    height: 50px;
+}
 
-    background: green;
-    width: 100%;
-    height: 10vh;
-    height: 10vh;
+header .header-logo-name .header-name {
+    width: 69%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
 }
 
 header .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: fit-content ;
+}
+
+header .navbar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
     width: fit-content;
+}
+
+header .navbar div p {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: context-menu;
+    padding: 3px;
+}
+
+header .navbar .navbar-univer-dropdown {
+    display: none;
+
+}
+header .navbar .navbar-univer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-univer:hover .navbar-univer-dropdown {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 24%;
+    width: 18%;
+}
+header .navbar .navbar-univer:hover .navbar-univer-text svg{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+header .navbar .navbar-univer .navbar-univer-text svg{
+    transition: .5s;
+    margin-left: 5px;
+}
+header .navbar .navbar-univer .navbar-univer-dropdown div{
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover{
+    background: #2857fe;
+    transition: .2s ;
+}
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover a{
+    color: white;
+}
+header .navbar .navbar-univer .navbar-univer-dropdown div a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    color: #494848;
+}
+header .navbar .navbar-students{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+header .navbar .navbar-students .navbar-students-dropdown{
+    display: none;
+}
+header .navbar .navbar-students:hover > .navbar-students-dropdown{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 50%;
+    width: 18%;
+    box-shadow: 5px;
+}
+header .navbar .navbar-students .navbar-students-dropdown div{
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+header .navbar .navbar-students .navbar-students-dropdown div:hover{
+    background: #2857fe;
+    transition: .2s ;
+}
+header .navbar .navbar-students .navbar-students-dropdown div:hover a{
+    color: white;
+}
+header .navbar .navbar-students .navbar-students-dropdown div a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    color: #494848;
+}
+header .navbar .navbar-students:hover .navbar-students-text svg{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+header .navbar .navbar-students .navbar-students-text svg{
+    transition: .5s;
+    margin-left: 5px;
+}
+header .navbar .navbar-abiturient{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown{
+    display: none;
+}
+header .navbar .navbar-abiturient:hover .navbar-abiturient-dropdown{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 30%;
+    width: 22%;
+    box-shadow: 5px;
+}
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div{
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover{
+    background: #2857fe;
+    transition: .2s ;
+}
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover a{
+    color: white;
+}
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    color: #494848;
+}
+header .navbar .navbar-abiturient:hover .navbar-abiturient-text svg{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+header .navbar .navbar-abiturient .navbar-abiturient-text svg{
+    transition: .5s;
+    margin-left: 5px;
+}
+header .navbar .navbar-science:hover .navbar-science-text svg{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+header .navbar .navbar-science .navbar-science-text svg{
+    transition: .5s;
+    margin-left: 5px;
+}
+header .language{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 4%;
+    justify-content: space-between;
 }
 
 header .navbar div {
