@@ -1,28 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-
 * {
     margin: 0;
     padding: 0 auto;
-}
-body{
-    font-family: 'PT Serif';
-    /* background: #bbbbbb; */
-}
-.main--page-block{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.header {
-    width: 100%;
-    height: 60px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 header {
@@ -31,13 +11,10 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    position: fixed;
-    z-index: 100;
-    background: white;
 
     width: 100%;
     height: 60px;
-    box-shadow: 0 0 10px 0;
+    box-shadow: 0 0 10px 0 ;
 }
 
 header .header-logo-name {
@@ -59,7 +36,6 @@ header .header-logo-name .header-name {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    color: #1c41b0;
 }
 
 header .navbar {
@@ -69,7 +45,7 @@ header .navbar {
     justify-content: space-between;
 
     width: 60%;
-    height: fit-content;
+    height: fit-content ;
 }
 
 header .navbar div {
@@ -81,7 +57,7 @@ header .navbar div {
 }
 
 header .navbar div p {
-    font-family: 'PT Serif';
+    font-family: 'PT Serif', sans-serif;
     font-size: 16px;
     font-weight: 700;
     cursor: context-menu;
@@ -92,8 +68,7 @@ header .navbar .navbar-univer-dropdown {
     display: none;
 
 }
-
-header .navbar .navbar-univer {
+header .navbar .navbar-univer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -106,21 +81,18 @@ header .navbar .navbar-univer:hover .navbar-univer-dropdown {
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 28vh;
+    height: 24%;
     width: 18%;
 }
-
-header .navbar .navbar-univer:hover .navbar-univer-text svg {
+header .navbar .navbar-univer:hover .navbar-univer-text svg{
     transform: rotate(180deg);
     transition: .5s;
 }
-
-header .navbar .navbar-univer .navbar-univer-text svg {
+header .navbar .navbar-univer .navbar-univer-text svg{
     transition: .5s;
     margin-left: 5px;
 }
-
-header .navbar .navbar-univer .navbar-univer-dropdown div {
+header .navbar .navbar-univer .navbar-univer-dropdown div{
     width: 100%;
     height: 25%;
     transition: .2s;
@@ -128,17 +100,14 @@ header .navbar .navbar-univer .navbar-univer-dropdown div {
     flex-direction: row;
     align-items: flex-start;
 }
-
-header .navbar .navbar-univer .navbar-univer-dropdown div:hover {
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover{
     background: #2857fe;
-    transition: .2s;
+    transition: .2s ;
 }
-
-header .navbar .navbar-univer .navbar-univer-dropdown div:hover a {
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover a{
     color: white;
 }
-
-header .navbar .navbar-univer .navbar-univer-dropdown div a {
+header .navbar .navbar-univer .navbar-univer-dropdown div a{
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -152,33 +121,29 @@ header .navbar .navbar-univer .navbar-univer-dropdown div a {
 
     font-size: 16px;
     font-weight: 400;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     color: #494848;
 }
-
-header .navbar .navbar-students {
+header .navbar .navbar-students{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
-header .navbar .navbar-students .navbar-students-dropdown {
+header .navbar .navbar-students .navbar-students-dropdown{
     display: none;
 }
-
-header .navbar .navbar-students:hover>.navbar-students-dropdown {
+header .navbar .navbar-students:hover > .navbar-students-dropdown{
     display: flex;
     position: absolute;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 46vh;
+    height: 50%;
     width: 18%;
     box-shadow: 5px;
 }
-
-header .navbar .navbar-students .navbar-students-dropdown div {
+header .navbar .navbar-students .navbar-students-dropdown div{
     width: 100%;
     height: 25%;
     transition: .2s;
@@ -186,17 +151,14 @@ header .navbar .navbar-students .navbar-students-dropdown div {
     flex-direction: row;
     align-items: flex-start;
 }
-
-header .navbar .navbar-students .navbar-students-dropdown div:hover {
+header .navbar .navbar-students .navbar-students-dropdown div:hover{
     background: #2857fe;
-    transition: .2s;
+    transition: .2s ;
 }
-
-header .navbar .navbar-students .navbar-students-dropdown div:hover a {
+header .navbar .navbar-students .navbar-students-dropdown div:hover a{
     color: white;
 }
-
-header .navbar .navbar-students .navbar-students-dropdown div a {
+header .navbar .navbar-students .navbar-students-dropdown div a{
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -210,44 +172,38 @@ header .navbar .navbar-students .navbar-students-dropdown div a {
 
     font-size: 16px;
     font-weight: 400;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     color: #494848;
 }
-
-header .navbar .navbar-students:hover .navbar-students-text svg {
+header .navbar .navbar-students:hover .navbar-students-text svg{
     transform: rotate(180deg);
     transition: .5s;
 }
-
-header .navbar .navbar-students .navbar-students-text svg {
+header .navbar .navbar-students .navbar-students-text svg{
     transition: .5s;
     margin-left: 5px;
 }
-
-header .navbar .navbar-abiturient {
+header .navbar .navbar-abiturient{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
 }
-
-header .navbar .navbar-abiturient .navbar-abiturient-dropdown {
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown{
     display: none;
 }
-
-header .navbar .navbar-abiturient:hover .navbar-abiturient-dropdown {
+header .navbar .navbar-abiturient:hover .navbar-abiturient-dropdown{
     display: flex;
     position: absolute;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 33vh;
+    height: 30%;
     width: 22%;
     box-shadow: 5px;
 }
-
-header .navbar .navbar-abiturient .navbar-abiturient-dropdown div {
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div{
     width: 100%;
     height: 25%;
     transition: .2s;
@@ -255,22 +211,18 @@ header .navbar .navbar-abiturient .navbar-abiturient-dropdown div {
     flex-direction: row;
     align-items: flex-start;
 }
-
-header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover {
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover{
     background: #2857fe;
-    transition: .2s;
+    transition: .2s ;
 }
-
-header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover a {
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover a{
     color: white;
 }
-
-header .navbar .navbar-abiturient .navbar-abiturient-dropdown div a {
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div a{
     text-align: left;
     text-decoration: none;
     width: 100%;
     height: 100%;
-
     font-size: 16px;
     font-weight: 400;
     font-family: 'PT Sans', sans-serif;
@@ -281,7 +233,6 @@ header .navbar .navbar-abiturient .navbar-abiturient-dropdown div a {
     flex-direction: row;
     align-items: center;
 }
-
 header .navbar {
     display: flex;
     flex-direction: row;
@@ -291,181 +242,51 @@ header .navbar {
 
     font-size: 16px;
     font-weight: 400;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     color: #494848;
 }
-
-header .navbar .navbar-abiturient:hover .navbar-abiturient-text svg {
+header .navbar .navbar-abiturient:hover .navbar-abiturient-text svg{
     transform: rotate(180deg);
     transition: .5s;
 }
-
-header .navbar .navbar-abiturient .navbar-abiturient-text svg {
+header .navbar .navbar-abiturient .navbar-abiturient-text svg{
     transition: .5s;
     margin-left: 5px;
 }
-
-header .navbar .navbar-science:hover .navbar-science-text svg {
+header .navbar .navbar-science:hover .navbar-science-text svg{
     transform: rotate(180deg);
     transition: .5s;
 }
-
-header .navbar .navbar-science .navbar-science-text svg {
+header .navbar .navbar-science .navbar-science-text svg{
     transition: .5s;
     margin-left: 5px;
 }
-
-header .language {
+header .language{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 4%;
     justify-content: space-between;
 }
-.window-second-slide{
+
+header .navbar div {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    background-image: url('../../img/second-bg-img.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-#firstBG {
-    position: relative;
-    border-radius: 0px;
-    object-fit: fill;
+    height: fit-content;
+}
 
-    left: 35%;
-    height: 70vh;
-    width: 65%;
+.search{
+    height: 35px;
+    width: 985px;
+    margin-left: 220px;
+    margin-top: 10px;
+    border: 1.5px solid #2857FE;
+    outline: none;
 
 }
 
-.left-side {
-    position: absolute;
-    z-index: 1;
-
-    top: 8.5%;
-}
-
-.left-side-web img {
-    position: absolute;
-    z-index: 2;
-
-    top: 11%;
-    width: 50%;
-    height: 67%;
-}
-
-.logo-text img {
-    position: absolute;
-    z-index: 3;
-
-    top: 4%;
-    left: 3%;
-    width: 33%;
-    height: 66%;
-    opacity: 10%;
-}
-
-.logo-img img {
-    position: absolute;
-    z-index: 3;
-
-    top: 11%;
-    left: 9.8%;
-    width: 20%;
-    height: 56%;
-    opacity: 10%;
-}
-
-.univer-name-rus {
-    position: absolute;
-    z-index: 4;
-    top: 12%;
-    left: 4%;
-
-    color: white;
-
-    font-family: PT Sans;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
-.univer-info-rus {
-    position: absolute;
-    z-index: 4;
-    top: 37%;
-    left: 4%;
-
-    color: white;
-
-    font-family: PT Sans;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 100%;
-    height: 100vh;
-}
-.window-second-slide .second-slide-content{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-evenly;
-
-}
-.window-second-slide .second-slide-content .title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    width: 44%;
-    height: 83vh;
-}
-.window-second-slide .second-slide-content .title-container h1{
-    font-size: 64px ;
-    font-weight: 700;
-    color: #1c41b0;
-}
-.window-second-slide .second-slide-content .title-container .title-block{
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-.window-second-slide .second-slide-content .video-container .video-png {
-    position: absolute;
-    margin-left: -25px;
-    margin-top: -20px;
-}
-.polosa1 {
-
-    position: absolute;
-    z-index: 4;
-    width: 13px;
-    height: 523px;
-    left: 0%;
-    top: 8.4%;
-
-    background: #862633;
-}
-
-.polosa2 {
-    position: absolute;
-    z-index: 4;
-    width: 13px;
-    height: 523px;
-    left: 0.7%;
-    top: 8.4%;
-
-    background: #F8AE44;
+.search:hover{
+    border: 0.9px solid #2857FE;
+    transition: border 0.1s ease;
 }
