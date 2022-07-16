@@ -5,6 +5,25 @@
     margin: 0;
     padding: 0 auto;
 }
+body{
+    font-family: 'PT Serif';
+    /* background: #bbbbbb; */
+}
+.main--page-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.header {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 header {
 
@@ -12,6 +31,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    position: fixed;
+    z-index: 100;
+    background: white;
 
     width: 100%;
     height: 60px;
@@ -37,6 +59,7 @@ header .header-logo-name .header-name {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    color: #1c41b0;
 }
 
 header .navbar {
@@ -58,7 +81,7 @@ header .navbar div {
 }
 
 header .navbar div p {
-    font-family: 'PT Serif', sans-serif;
+    font-family: 'PT Serif';
     font-size: 16px;
     font-weight: 700;
     cursor: context-menu;
@@ -83,7 +106,7 @@ header .navbar .navbar-univer:hover .navbar-univer-dropdown {
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 24%;
+    height: 28vh;
     width: 18%;
 }
 
@@ -129,7 +152,7 @@ header .navbar .navbar-univer .navbar-univer-dropdown div a {
 
     font-size: 16px;
     font-weight: 400;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans';
     color: #494848;
 }
 
@@ -150,7 +173,7 @@ header .navbar .navbar-students:hover>.navbar-students-dropdown {
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 50%;
+    height: 46vh;
     width: 18%;
     box-shadow: 5px;
 }
@@ -187,7 +210,7 @@ header .navbar .navbar-students .navbar-students-dropdown div a {
 
     font-size: 16px;
     font-weight: 400;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans';
     color: #494848;
 }
 
@@ -219,7 +242,7 @@ header .navbar .navbar-abiturient:hover .navbar-abiturient-dropdown {
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 30%;
+    height: 33vh;
     width: 22%;
     box-shadow: 5px;
 }
@@ -247,6 +270,7 @@ header .navbar .navbar-abiturient .navbar-abiturient-dropdown div a {
     text-decoration: none;
     width: 100%;
     height: 100%;
+
     font-size: 16px;
     font-weight: 400;
     font-family: 'PT Sans', sans-serif;
@@ -267,7 +291,7 @@ header .navbar {
 
     font-size: 16px;
     font-weight: 400;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans';
     color: #494848;
 }
 
@@ -298,15 +322,15 @@ header .language {
     width: 4%;
     justify-content: space-between;
 }
-
-header .navbar div {
+.window-second-slide{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    height: fit-content;
-}
-
-
+    background-image: url('../../img/second-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 #firstBG {
     position: relative;
     border-radius: 0px;
@@ -317,7 +341,6 @@ header .navbar div {
     width: 65%;
 
 }
-
 
 .left-side {
     position: absolute;
@@ -388,9 +411,42 @@ header .navbar div {
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
+    width: 100%;
+    height: 100vh;
+}
+.window-second-slide .second-slide-content{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
 
 }
-
+.window-second-slide .second-slide-content .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 44%;
+    height: 83vh;
+}
+.window-second-slide .second-slide-content .title-container h1{
+    font-size: 64px ;
+    font-weight: 700;
+    color: #1c41b0;
+}
+.window-second-slide .second-slide-content .title-container .title-block{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.window-second-slide .second-slide-content .video-container .video-png {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -20px;
+}
 .polosa1 {
 
     position: absolute;
