@@ -349,7 +349,11 @@ header .language {
     height: 100%;
 
 }
-
+.first-slide-btn-block a:hover{
+ background-color: #1C41B0;
+ color: white;
+ transition: .3s;
+}
 .first-slide-btn {
     position: absolute;
     z-index: 5;
