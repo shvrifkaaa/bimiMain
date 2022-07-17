@@ -4,6 +4,8 @@
 * {
     margin: 0;
     padding: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 body{
     /* font-family: 'PT Serif'; */
@@ -506,3 +508,24 @@ header .language {
 .window-four-slide .four-slide-content .content-block .block .block-desc p{
     font-size: 14px;
 }
+
+.window-fifth-slide{
+    background-image: url('../../img/fifth-slide-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 68vh;
+
+}
+  
+  .carousel img {
+    display: block;
+    height: 200px;
+    margin: 10px 10px;
+  }
+  
+  @media screen and ( min-width: 768px ) {
+    .carousel img {
+      height: 400px;
+    }
+  }
