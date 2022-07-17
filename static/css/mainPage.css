@@ -442,20 +442,19 @@ header .logo {
     height: 100%;
 
 }
-.first-slide-btn-block a:hover{
- background-color: #1C41B0;
- color: white;
- transition: .3s;
-}
-.first-slide-btn {
+.first-slide-btn-block{
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: absolute;
-    z-index: 5;
-    left: 22%;
-    top: 70%;
-
-    box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
-    padding: 3%;
-    background: white;
+    top: 70vh;
+    
+}
+.first-slide-btn-block a{
+    width: 16.5%;
+    height: 15vh;
     border-radius: 5px;
 
     text-decoration: none;
@@ -464,72 +463,44 @@ header .logo {
     font-size: 22px;
 
     color: #1C41B0;
+    background: white;
+    box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
+
+
+}
+.first-slide-btn-block a:hover {
+    background-color: #1C41B0;
+    color: white;
+    transition: .3s;
+}
+.first-slide-btn {
+    padding: 3%;
+
 }
 
 .first-slide-btn2 {
-    position: absolute;
-    z-index: 5;
-    left: 37.3%;
-    top: 70%;
-
-    box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
     padding: 3%;
-    background: white;
-    border-radius: 5px;
-
-    text-decoration: none;
-    font-family: 'PT Serif';
-    font-weight: 400;
-    font-size: 22px;
-
-    color: #1C41B0;
 }
 
 .first-slide-btn3{
-    position: absolute;
-    z-index: 5;
-    left: 51.6%;
-    top: 70%;
-
-    box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
     padding: 3%;
     padding-left: 5%;
     padding-right: 5%;
-    background: white;
-    border-radius: 5px;
-    
-    text-decoration: none;
-    font-family: 'PT Serif';
-    font-weight: 400;
-    font-size: 22px;
 
-    color: #1C41B0;
 }
 
 .first-slide-btn4{
-    position: absolute;
-    z-index: 5;
-    left: 65.7%;
-    top: 70%;
+    padding: 1.6%;
+    padding-top: 2.5%;
 
-    box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
-    padding: 3%;
-    background: white;
-    border-radius: 5px;
-
-    text-decoration: none;
-    font-family: 'PT Serif';
-    font-weight: 400;
-    font-size: 22px;
-
-    color: #1C41B0;
 }
 
 .first-slide-block {
     display: flex;
     flex-direction: row;
     width: 100%;
-    }
+}
+
 .window-second-slide .second-slide-content{
     display: flex;
     flex-direction: row;
