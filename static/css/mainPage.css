@@ -425,6 +425,9 @@ header .logo {
 }
 
 .window-second-slide {
+    background-image: url(../../img/second-bg-img.png);
+    background-repeat: no-repeat;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -549,6 +552,7 @@ header .logo {
     font-size: 64px;
     font-weight: 700;
     color: #1c41b0;
+    margin-top: 10%;
 }
 
 .window-second-slide .second-slide-content .title-container .title-block {
