@@ -326,12 +326,102 @@ header .navbar .navbar-science .navbar-science-text svg {
     margin-left: 5px;
 }
 
-header .language {
-    display: flex;
+header .logo {
+
+    width: 3%;
+
+    /* display: flex;
     flex-direction: row;
     align-items: center;
     width: 4%;
+    justify-content: space-between; */
+}
+
+.nav{
+    display: flex;
     justify-content: space-between;
+
+    width: 30%;
+    margin: 0 auto;
+}
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: center;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/us_flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ru:before {
+    background-image: url(../../img/russian_flag.png);
+}
+
+.en:before {
+    background-image: url(../../img/us_flag.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
 }
 
 .window-second-slide {
