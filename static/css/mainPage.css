@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
 * {
@@ -844,6 +845,96 @@ header .logo {
 
 }
 
+.window-seventh-slide{
+    width: 88%;
+    height: 65vh;
+}
+.window-seventh-slide img{
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+}
+.window-seventh-slide .seventh-slide-content{
+    width: 100%;
+    height: 95%;
+    margin-top: 25px;
+}
+.window-seventh-slide .seventh-slide-content h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+}
+.window-seventh-slide .seventh-slide-content .content-block{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.window-seventh-slide .seventh-slide-content .content-block .content-card{
+    width: 24%;
+    height: 82%;
+}
+
+.window-seventh-slide .seventh-slide-content .content-block .content-card .card-end{
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.window-seventh-slide .seventh-slide-content .content-block .content-card .card-end .card-top{
+    width: 100%;
+    
+    padding: 1%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bbb;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    justify-content: space-between;
+    
+    color: #1c41b0;
+    font-size: 17px;
+    font-family: 'PT Serif';
+    font-weight: 700;
+    height: 24%;
+    
+}
+.window-seventh-slide .seventh-slide-content .content-block .content-card .card-end .card-bottom{
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1%;
+}
+.window-seventh-slide .seventh-slide-content .content-block .content-card .card-end .card-bottom p{
+    height: 70%;
+    
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+}
+.window-seventh-slide .seventh-slide-content .content-block .content-card .card-end .card-bottom a{
+    text-decoration: none;
+    color: #1c41b0;
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+}
+
 .eight-slideBG img {
     width: 100%;
     height: 100%;
@@ -852,7 +943,7 @@ header .logo {
 .eight-slideLogo {
     position: absolute;
     z-index: 1;
-    top: 610%;
+    top: 670%;
     left: 60.5%;
 }
 
@@ -864,7 +955,7 @@ header .logo {
 .eight-slideTextLogo {
     position: absolute;
     z-index: 1;
-    top: 600%;
+    top: 662%;
     left: 55%;
 
 }
@@ -877,7 +968,7 @@ header .logo {
 .eight-slide-text {
     position: absolute;
     z-index: 2;
-    top: 600%;
+    top: 664%;
     left: 18%;
 }
 
@@ -904,7 +995,7 @@ header .logo {
     width: 276px;
     height: 55px;
     left: 18%;
-    top: 626%;
+    top: 689%;
     
     background: #FFFFFF;
     border-radius: 10px;
