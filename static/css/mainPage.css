@@ -353,20 +353,18 @@ header .logo {
     margin-top: 10px;
     position: relative;
 }
-
 .lang-menu .selected-lang {
-    display: flex;
+    display: flex;   
     justify-content: center;
     line-height: 2;
     cursor: pointer;
 }
-
 .lang-menu .selected-lang:before {
     content: '';
     display: inline-block;
     width: 32px;
     height: 32px;
-    background-image: url(../../img/russian_flag.png);
+    background-image: url('../../img/russian_flag.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -382,7 +380,7 @@ header .logo {
     right: 0px;
     width: 125px;
     border-radius: 5px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 }
 
 
@@ -416,11 +414,11 @@ header .logo {
 }
 
 .ru:before {
-    background-image: url(../../img/russian_flag.png);
+    background-image: url('../../img/russian_flag.png');
 }
 
 .en:before {
-    background-image: url(../../img/us_flag.png);
+    background-image: url('../../img/us_flag.png');
 }
 
 .lang-menu:hover ul {
@@ -428,7 +426,7 @@ header .logo {
 }
 
 .window-second-slide {
-    background-image: url(../../img/second-bg-img.png);
+    background-image: url('../../img/second-bg-img.png');
     background-repeat: no-repeat;
 
     display: flex;
@@ -453,10 +451,13 @@ header .logo {
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    top: 70vh;
+    top: 80vh;
 
 }
-
+.first-slide-block img{
+    width: 1366px;
+    height: 523px;
+}
 .first-slide-btn-block a {
     width: 16.5%;
     height: 15vh;
@@ -500,12 +501,6 @@ header .logo {
     padding: 1.6%;
     padding-top: 2.5%;
 
-}
-
-.first-slide-block {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 
 .window-second-slide .second-slide-content {
@@ -935,88 +930,48 @@ header .logo {
     font-family: 'PT Sans';
 }
 
-.eight-slideBG img {
+.window-eight-slide{
     width: 100%;
+    height: 53vh;
+    background-image: url('../../img/8sllideBG.png');
+
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.window-eight-slide .eight-slide-block{
+    width: 80%;
     height: 100%;
-}
-
-.eight-slideLogo {
-    position: absolute;
-    z-index: 1;
-    top: 670%;
-    left: 60.5%;
-}
-
-.eight-slideLogo img {
-    width: 30%;
-    opacity: 70%;
-}
-
-.eight-slideTextLogo {
-    position: absolute;
-    z-index: 1;
-    top: 662%;
-    left: 55%;
-
-}
-
-.eight-slideTextLogo img {
-    height: 100%;
-    width: 100%;
-}
-
-.eight-slide-text {
-    position: absolute;
-    z-index: 2;
-    top: 664%;
-    left: 18%;
-}
-
-.eight-slide-text h2 {
-    font-family: PT Sans;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 62px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-
-}
-
-.eight-slide-btn {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 18px 36px;
-    gap: 16px;
-    
-    position: absolute;
-    width: 276px;
-    height: 55px;
-    left: 18%;
-    top: 689%;
-    
-    background: #FFFFFF;
+
+}
+.window-eight-slide .eight-slide-block .left-side p{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'PT Sans';
+    color: #fff;
+
+}
+.window-eight-slide .eight-slide-block .left-side button{
+    width: 78%;
+    height: 8vh;
+
+    color: #2857fe;
     border-radius: 10px;
-}
+    border: none;
 
-.eight-slide-btn a {
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-
-    color: #1C41B0;
+    font-family: 'Ubuntu' ;
+    transition: .3s;
 
 }
-
-.eight-slide-btn:hover{
-    background-color: #1C41B0;
-    color: white;
+.window-eight-slide .eight-slide-block .left-side button:hover{
+    background-color: #1c41b0;
+    color: #fff;
     transition: .3s;
 }
 footer{
