@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'PT Serif'; */
+    /* background: #bbbbbb; */
+    font-family: monospace;
+}
+
+.normatives--page-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 100;
+    background: white;
+
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 10px 0;
+}
+
+header .header-logo-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+header .header-logo-name img {
+    width: 65px;
+    height: 50px;
+}
+
+header .header-logo-name .header-name {
+    width: 69%;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #1c41b0;
+    font-family: monospace;
+}
+
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: fit-content;
+}
+
+header .navbar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+header .navbar div p {
+    font-family: 'PT Serif';
+    font-size: 16px;
+    font-weight: 700;
+    cursor: context-menu;
+    padding: 3px;
+}
+
+header .navbar div p:hover {
+    color: #1c41b0;
+}
+
+header .navbar .navbar-univer-dropdown {
+    display: none;
+
+}
+
+header .navbar .navbar-univer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-univer:hover .navbar-univer-dropdown {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 28vh;
+    width: 18%;
+}
+
+header .navbar .navbar-univer:hover .navbar-univer-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-univer .navbar-univer-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div {
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover {
+    background: #2857fe;
+    transition: .2s;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover a {
+    color: white;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div a {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #494848;
+}
+
+header .navbar .navbar-students {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown {
+    display: none;
+}
+
+header .navbar .navbar-students:hover>.navbar-students-dropdown {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 46vh;
+    width: 18%;
+    box-shadow: 5px;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div {
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div:hover {
+    background: #2857fe;
+    transition: .2s;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div:hover a {
+    color: white;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div a {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #494848;
+}
+
+header .navbar .navbar-students:hover .navbar-students-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-students .navbar-students-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .navbar .navbar-abiturient {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown {
+    display: none;
+}
+
+header .navbar .navbar-abiturient:hover .navbar-abiturient-dropdown {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 33vh;
+    width: 22%;
+    box-shadow: 5px;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div {
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover {
+    background: #2857fe;
+    transition: .2s;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover a {
+    color: white;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div a {
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    color: #494848;
+
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #494848;
+}
+
+header .navbar .navbar-abiturient:hover .navbar-abiturient-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .navbar .navbar-science:hover .navbar-science-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-science .navbar-science-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .logo {
+
+    width: 3%;
+
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 4%;
+    justify-content: space-between; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 30%;
+    margin: 0 auto;
+}
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+}
+
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/russian_flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ru:before {
+    background-image: url(../../img/russian_flag.png);
+}
+
+.en:before {
+    background-image: url(../../img/us_flag.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+.tabs-list {
+    position: absolute;
+    left: 5%;
+    top: 12%;
+
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.normatives-title h1 {
+    font-family: PT Serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1c41b0;
+
+}
+
+.normatives-title {
+    position: absolute;
+    left: 5%;
+    top: 15.4%;
+    height: 54px;
+    width: 684px;
+
+}
+
+.image-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 63px;
+    padding-top: 140px;
+}
+
+.image-block img {
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.tunorm {
+    width: 410px;
+    height: 294px;
+}
+
+.image-block img:hover{
+    color: #1c41b0;
+    opacity: 40%;
+    transition: .3s;
+
+    
+}
