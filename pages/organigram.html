@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Органиграм</title>
+    <link rel="stylesheet" href="../static/css/organigram.css">
+</head>
+<body>
+    <div class="organigram--page-block">
+
+        <div class="header">
+            <header>
+                <div class="header-logo-name">
+                    <img src="../img/headerLogo.png" width="64px" height="49px" alt="">
+                    <div class="header-name">
+                        <p>Бишкекский Международный Медицинский Институт</p>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="navbar-univer">
+                        <div class="navbar-univer-text">
+                            <p>ИНСТИТУТ</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                fill="none">
+                                <path d="M11 1L6 6L1 1" stroke="#0F2149" />
+                            </svg>
+                        </div>
+                        <div class="navbar-univer-dropdown">
+                            <div>
+                                <a href="./normatives.html">Нормативные документы</a>
+                            </div>
+                            <div>
+                                <a href="####">Органиграм</a>
+                            </div>
+                            <div>
+                                <a href="####">БММИ</a>
+                            </div>
+                            <div>
+                                <a href="./news.html">Новости</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="navbar-students">
+                        <div class="navbar-students-text">
+                            <p>СТУДЕНТАМ</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                fill="none">
+                                <path d="M11 1L6 6L1 1" stroke="#0F2149" />
+                            </svg>
+                        </div>
+                        <div class="navbar-students-dropdown">
+                            <div>
+                                <a href="####">Расписание</a>
+                            </div>
+                            <div>
+                                <a href="####">Поддержка студентов</a>
+                            </div>
+                            <div>
+                                <a href="####">Жизнь студентов</a>
+                            </div>
+                            <div>
+                                <a href="####">Учебный план</a>
+                            </div>
+                            <div>
+                                <a href="####">Вопросник</a>
+                            </div>
+                            <div>
+                                <a href="####">АВН</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-abiturient">
+                        <div class="navbar-abiturient-text">
+                            <p>АБИТУРИЕНТАМ</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                fill="none">
+                                <path d="M11 1L6 6L1 1" stroke="#0F2149" />
+                            </svg>
+                        </div>
+                        <div class="navbar-abiturient-dropdown">
+                            <div>
+                                <a href="####">Правила приёма документов</a>
+                            </div>
+                            <div>
+                                <a href="####">Документы для поступления</a>
+                            </div>
+                            <div>
+                                <a href="####">Подача заявления после прибытия</a>
+                            </div>
+                            <div>
+                                <a href="####">Заявления о приёме</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-science">
+                        <div class="navbar-science-text">
+                            <p>НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                fill="none">
+                                <path d="M11 1L6 6L1 1" stroke="#0F2149" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="navbar-contacts">
+                        <p>КОНТАКТЫ</p>
+                    </div>
+                </div>
+
+                <div class="lang-menu">
+                    <div class="selected-lang">
+                        Ru
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="" class="ru">Ru</a>
+                        </li>
+                        <li>
+                            <a href="./normativesEng.html" class="en">En</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </header>
+        </div>
+
+        <div class="opened-tabs">
+            <div class="tabs-list">
+                <a href="./mainPage.html" style="text-decoration: none;color: #1c41b0;">Главная &#9656;</a>
+                <a href="./organigram.html" style="text-decoration: none ;color: #1c41b0;">Органиграм</a>
+            </div>
+            <div class="organigram-title">
+                <h1 id="head-title" style="display: block;">Руководство</h1>
+                <h1 id="admin-title" style="display: none;">Администрация</h1>
+                <h1 id="managers-title" style="display: none;">Заведующие кафедрами</h1>
+            </div>
+        </div>
+        
+        <div class="head">
+            <div class="head-tabs">
+                <div class="head-desc">
+                    <p style="font-weight:700; color: #1c41b0;" id="head-desc" onclick="
+                    document.querySelector('#head-desc').style.fontWeight= 700;
+                    document.querySelector('#admins-desc').style.fontWeight=400;
+                    document.querySelector('#managers-desc').style.fontWeight=400;
+                    
+                    document.querySelector('#head-desc').style.color='#1c41b0';
+                    document.querySelector('#admins-desc').style.color='#0F2149';
+                    document.querySelector('#managers-desc').style.color='#0F2149';
+
+                    document.querySelector('#head-title').style.display='block';
+                    document.querySelector('#admin-title').style.display='none'
+                    document.querySelector('#managers-title').style.display='none'
+
+                    document.querySelector('.heads-cards').style.display='flex';
+                    document.querySelector('.admins-cards').style.display='none';
+                    document.querySelector('.managers-cards').style.display='none';
+                    ">
+                        Руководство
+                    </p>
+
+                    <p class="main" id="admins-desc"
+                    onclick="
+                    document.querySelector('#head-desc').style.fontWeight= 400;
+                    document.querySelector('#admins-desc').style.fontWeight=700;
+                    document.querySelector('#managers-desc').style.fontWeight= 400;
+
+                    document.querySelector('#head-desc').style.color='#0F2149';
+                    document.querySelector('#admins-desc').style.color='#1c41b0';
+                    document.querySelector('#managers-desc').style.color='#0F2149';
+
+                    document.querySelector('#head-title').style.display='none';
+                    document.querySelector('#admin-title').style.display='block';
+                    document.querySelector('#managers-title').style.display='none'
+
+                    document.querySelector('.heads-cards').style.display='none';
+                    document.querySelector('.admins-cards').style.display='flex';
+                    document.querySelector('.managers-cards').style.display='none';
+                    ">
+                        Администрация
+                    </p>
+                    <p class="managers" id="managers-desc"
+                    onclick="
+                    document.querySelector('#head-desc').style.fontWeight= 400;
+                    document.querySelector('#admins-desc').style.fontWeight=400;
+                    document.querySelector('#managers-desc').style.fontWeight= 700;
+
+                    document.querySelector('#head-desc').style.color='#0F2149';
+                    document.querySelector('#admins-desc').style.color='#0F2149';
+                    document.querySelector('#managers-desc').style.color='#1c41b0';
+
+                    document.querySelector('#head-title').style.display='none';
+                    document.querySelector('#admin-title').style.display='none';
+                    document.querySelector('#managers-title').style.display='block'
+
+                    document.querySelector('.heads-cards').style.display='none';
+                    document.querySelector('.admins-cards').style.display='none';
+                    document.querySelector('.managers-cards').style.display='flex';
+                    ">
+                        Заведущие кафедрами
+                    </p>
+                </div>
+            </div>
+            
+            <div class="heads-cards">
+                <img src="../img/direction-line.png" class="line" alt="">
+
+                <div class="heads-content">
+
+                    <div class="head-card">
+                        <svg class="dot1" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <circle cx="6.5" cy="6.5" r="6.5" fill="#FF8F0B"/>
+                            </svg>
+                        <div class="img">
+                            <img src="../img/direction1.png" alt="">
+                        </div>
+
+                        <div class="initials">
+                            <h1>
+                                Мамырбаева Турсун Турганбаевна</h1>
+                            <p class="post">
+                                Ректор Бишкекского международного медицинского института, доктор медицинских наук,
+                                Профессор.</p>
+                            <a href="####" class="more" onclick="
+                            document.querySelector('.opened-tabs').style.display='none';
+                            document.querySelector('.head').style.display='none';
+                            document.querySelector('.rector-more').style.display='flex';
+                            "> Подробнее
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9"
+                                    fill="none">
+                                    <path d="M0.999199 1L5 4.5L0.999199 8" stroke="#2857FE" stroke-width="2"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="head-card">
+                        <svg class="dot2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <circle cx="6.5" cy="6.5" r="6.5" fill="#FF8F0B"/>
+                            </svg>
+                        <div class="img">
+                            <img src="../img/direction2.png" alt="">
+
+                        </div>
+                        <div class="initials">
+                            <h1>
+                                Апезова Дилара Урумбаева</h1>
+                            <p class="post">
+                                Проректор Бишкекского международного медицинского института, Кандидат политических наук,
+                                доцент.</p>
+                                <a href="####" class="more"
+                                onclick="
+                                document.querySelector('.opened-tabs').style.display='none';
+                                document.querySelector('.head').style.display='none';
+                                document.querySelector('.apezova-cards').style.display='flex';"
+                                > Подробнее
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9"
+                                        fill="none">
+                                        <path d="M0.999199 1L5 4.5L0.999199 8" stroke="#2857FE" stroke-width="2"></path>
+                                    </svg>
+                                </a>
+                        </div>
+                    </div>
+
+                    <div class="head-card" style="border-bottom: none;">
+                        <svg class="dot3" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <circle cx="6.5" cy="6.5" r="6.5" fill="#FF8F0B"/>
+                            </svg>
+                        <div class="img">
+                            <img src="../img/direction3.png" alt="">
+
+                        </div>
+                        <div class="initials">
+                            <h1>
+                                Отогонова Жылдыз Кадыровна</h1>
+                            <p class="post">
+                                Проректор Бишкекского международного медицинского института</p>
+                                <a href="####" class="more"> Подробнее
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="9" viewBox="0 0 7 9"
+                                        fill="none">
+                                        <path d="M0.999199 1L5 4.5L0.999199 8" stroke="#2857FE" stroke-width="2"></path>
+                                    </svg>
+                                </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="admins-cards" style="display: none;">
+            <div class="admins-content">
+
+                <div class="admins-card">
+                    <img src="../img/admins1.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Гумбатова Рафига Рашидовна
+                        </p>
+                        <p class="post">
+                            Начальник отдела управления качеством образования
+                        </p>
+                        <p class="numb">
+                            Тел: +996 709 010 382
+                        </p>
+                        <p class="mail">
+                            E-mail: grafiga@mail.ru
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins2.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Бердибаева Улара Бактыбековна
+                        </p>
+                        <p class="post">
+                            Начальник учебно-методического отдела
+                        </p>
+                        <p class="numb">
+                            Тел: +996 558 580 981
+                        </p>
+                        <p class="mail">
+                            E-mail: lifexpertium@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins3.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Бердибекова Медина Бердибековна
+                        </p>
+                        <p class="post">
+                            Зам.Декана
+                        </p>
+                        <p class="numb">
+                            Тел: + 996 509 220 990
+                        </p>
+                        <p class="mail">
+                            E-mail: desire1meku@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins1.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Гуляева Светлана Валентиновна
+                        </p>
+                        <p class="post">
+                            Начальник отдела кадров
+                        </p>
+                        <p class="numb">
+                            Тел: +996 773 773 307
+                        </p>
+                        <p class="mail">
+                            E-mail: svetlana.gulyaeva@bk.ru
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins5.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Максатбек кызы Нурдана
+                        </p>
+                        <p class="post">
+                            Старший инстпектор ОК по студенческому деопроизводству
+                        </p>
+                        <p class="numb">
+                            Тел: +996 705 180 785
+                        </p>
+                        <p class="mail">
+                            E-mail: nurdana85@mail.ru
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins6.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Жапарова Элеонора Токталиевна
+                        </p>
+                        <p class="post">
+                            Начальник отдела финансово-хозяйственной деятельности - главный бухгалтер
+                        </p>
+                        <p class="numb">
+                            Тел: +996 558 517 996
+                        </p>
+                        <p class="mail">
+                            E-mail:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins7.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Каландаров Тимур Тахирович
+                        </p>
+                        <p class="post">
+                            Начальник отдела международных связей
+                        </p>
+                        <p class="numb">
+                            Тел: +996 550 992 944
+                        </p>
+                        <p class="mail">
+                            E-mail: 0550992944@mail.ru
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins8.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Нитин Миина
+                        </p>
+                        <p class="post">
+                            Советник ректора по международным связям
+                        </p>
+                        <p class="numb">
+                            Тел: +996 771 970 555
+                        </p>
+                        <p class="mail">
+                            E-mail: drnitinisa@bimi.edu.kg
+                        </p>
+                    </div>
+                </div>
+
+                <div class="admins-card">
+                    <img src="../img/admins9.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Сергеев Вадим Викторович
+                        </p>
+                        <p class="post">
+                            Начальник Администрантивно-хозяйственной работы
+                        </p>
+                        <p class="numb">
+                            Тел: +996 553 910 550
+                        </p>
+                        <p class="mail">
+                            E-mail: vadim.sergeev.2014@yandex.ru
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="managers-cards" style="display:none;">
+
+            <div class="managers-content">
+
+                <div class="managers-card">
+                    <img src="../img/managers1.png" style="width: -webkit-fill-available;" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Абдувалиева Гульмира Алтыновна
+                        </p>
+                        <p class="post">
+                            Заведующая кафедрой гуманитарных и естественных наук
+                        </p>
+                        <p class="numb">
+                            Тел: +996 704 003 449
+                        </p>
+                        <p class="mail">E-mail: kuntuugane@gmail.com
+
+                        </p>
+                    </div>
+                </div>
+                <div class="managers-card">
+                    <img src="../img/managers2.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Аскеров Арсен Аскерович
+                        </p>
+                        <p class="post">
+                            Заведущий кафедры фундаментальных дисциплин, доктор медицинских наук, доцент 
+                        </p>
+                        <p class="numb">
+                            Тел: +996 550 331 731
+                        </p>
+                        <p class="mail">
+                            E-mail: askerov.arsen@inbox.ru
+                        </p>
+                    </div>
+                </div>
+                <div class="managers-card">
+                    <img src="../img/managers3.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Самигуллина Альфия Эльдаровна
+                        </p>
+                        <p class="post">
+                            Заведующая кафедрой клинических дисциплин, доктор медицинских наук, профессор
+                        </p>
+                        <p class="numb">
+                            Тел:+996 772 371 395
+                        </p>
+                        <p class="mail">
+                            E-mail: samigullina.68@mail.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="rector-more" style="display:none">
+            <div class="rector-content">
+                <div class="top-card">
+                    <img src="../img/rector-img1.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Мамырбаева Турсун Турганбаевна
+                        </p>
+                        <p class="post">
+                            Ректор БММИ
+                        </p>
+                        <a href="####" class="appeal"
+                        onclick="
+                        document.querySelector('.rector-content').style.display='none';
+                        document.querySelector('.rector-appeal').style.display='flex';
+                        ">
+                            Обращение к ректору
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom-card">
+                    <p >
+                        Dear applicants!
+                        <br />
+                        I am glad to welcome you to the website of the Bishkek International Medical Institute. I am
+                        sure
+                        that most of you ended up on the site of our institute not by chance.<br/> Here you can get
+                        acquainted in
+                        detail with our institute, the living conditions of students and the material base of the
+                        institute. <br/>
+                        Now you have one of the most important and crucial moments in your life - the choice of a
+                        profession! Your future depends on the quality of the education received: professional growth,
+                        career and the possibility of self-realization. We provide quality medical education that is
+                        focused
+                        on learning outcomes (student-centered learning), using modern educational technologies. <br/>
+                        At the institute, we involve employers in teaching, students from the very first year have
+                        practice
+                        in medical and preventive organizations, we pay special attention to communication skills with
+                        patients and colleagues, the ability to work in a team, and the development of leadership skills
+                        among our students.
+                        The university staff adheres to the dynamism of development, encourages creative search, the
+                        formation of education and culture among students, respects the cultural and religious
+                        preferences
+                        of each participant in the educational process.
+                        We are confident that the skills acquired at our institute allow graduates to adapt to the
+                        challenges of a changing world, to form a responsible attitude of people towards their health.
+                        With all my heart I wish you successful completion of the competitive selection and see you as
+                        students of our Institute!
+                    </p>
+
+                    <a href="####"
+                    onclick="
+                    document.querySelector('.opened-tabs').style.display='flex';
+                    document.querySelector('.head').style.display='flex';
+                    document.querySelector('.rector-more').style.display='none'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                            <path d="M7 1L1 6L7 11" stroke="#666666" />
+                        </svg>
+                        Назад
+                    </a>
+                </div>
+            </div>
+            <div class="rector-appeal" style="display:none ;">
+                <div class="appeal-content">
+                    <div class="top-card">
+                        <img src="../img/rector-img1.png" alt="">
+                        <div class="card-desc">
+                            <p class="name">
+                                Мамырбаева Турсун Турганбаевна
+                            </p>
+                            <p class="post">
+                                Ректор БММИ
+                            </p>
+                            <p class="desc"> 
+                                Если Вы хотите обратиться к Ректору с жалобой, просьбой личного характера, сообщением
+                                или прошением, связанными с персональными жизненными ситуациями и требующими ответа,
+                                воспользуйтесь предлагаемой формой для заполнения.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="appeal-title">
+                            Обращение к Ректору:
+                        </p>
+                        <span class="lower-text">
+                            <p class="symbol"> * </p>  Обязательные поля для заполнения.
+                        </span>
+                        <div class="form">
+                            <form action="submit">
+                                <div class="name">
+                                    <span> Имя <p class="symbol"> * </p> </span>
+                                    <input type="name">
+                                </div>
+                                <div class="mail">
+                                    <span> Почта <p class="symbol"> * </p> </span>
+                                    <input type="email">
+                                </div>
+                                <div class="numb">
+                                    <span>Телефон <p class="symbol"> * </p> </span>
+                                    <input type="tel" name="" id="">
+                                </div>
+                                <div class="subject">
+                                    <span>Тема Сообщения <p class="symbol"> * </p> </span>
+                                    <input type="text" value="">
+                                </div>
+                                <div class="topic">
+                                    <span> Сообщение <p class="symbol"> * </p> </span>
+                                    <!-- <input type="text" name="" id="text-message"> -->
+                                    <textarea name="" id="" cols="37" rows="10"></textarea>
+                                </div>
+                            </form>
+                            <div class="button-block">
+                                <input type="button" value="Отправить" class="send-btn" form="submit">
+
+                                <p class="back-btn" onclick="
+                            document.querySelector('.rector-content').style.display='flex';
+                            document.querySelector('.rector-appeal').style.display='none';
+                            ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"
+                                        fill="none">
+                                        <path d="M7 1L1 6L7 11" stroke="#666666" />
+                                    </svg>
+                                    Назад
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="apezova-cards" style="display:none;">
+            <div class="apezova-content">
+                <div class="top-card">
+                    <img src="../img/apezova-img.png" alt="">
+                    <div class="card-desc">
+                        <p class="name">
+                            Апезова Дилара Урумбаева
+                        </p>
+                        <div class="card-about">
+                            <p class="post">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="19" height="22" viewBox="0 0 19 22" fill="none">
+                                    <rect width="19" height="22" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_1525_2817"
+                                                transform="translate(0 -0.0109985) scale(0.00189036 0.00163258)" />
+                                        </pattern>
+                                        <image id="image0_1525_2817" width="529" height="626"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
+                                Проректор БММИ
+                            </p>
+                            <p class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+                                    fill="none">
+                                    <path
+                                        d="M18 4H14V2C14 0.89 13.11 0 12 0H8C6.89 0 6 0.89 6 2V4H2C0.89 4 0.00999999 4.89 0.00999999 6L0 17C0 18.11 0.89 19 2 19H18C19.11 19 20 18.11 20 17V6C20 4.89 19.11 4 18 4ZM12 4H8V2H12V4Z"
+                                        fill="black" />
+                                    <line y1="9.75" x2="20" y2="9.75" stroke="white" stroke-width="0.5" />
+                                    <path d="M8 10V12H12V10" stroke="white" />
+                                </svg>
+                                Общий стаж работы :
+                            </p>
+
+                            <p class="soft-skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_1525_2809)">
+                                        <path
+                                            d="M15.5985 3.05908L5.20557 3.13595L5.19253 3.13245C5.0317 3.08936 3.41611 2.7046 2.93568 4.4976C2.72691 5.27674 2.91689 5.94998 2.91689 5.94998L6.98554 20.2562C7.38954 21.568 9.075 21.2661 9.075 21.2661L21.8561 18.7877L21.548 18.2451C21.5865 17.703 21.7843 16.733 22.6745 16.2099C22.6944 16.1981 22.7031 16.1771 22.7168 16.1594L23.1176 16.1112L15.5985 3.05908ZM15.2687 5.49109L16.6703 8.17545L8.55948 8.90107L7.55032 5.68944L15.2687 5.49109ZM7.2193 18.3378L3.64074 5.75221C3.63891 5.74745 3.51104 5.24809 3.66012 4.69172C3.84919 3.98611 4.26667 3.81029 4.62976 3.80703L8.94592 17.362C8.323 17.454 7.55134 17.8389 7.2193 18.3378ZM21.4577 17.1071C21.3895 17.2674 21.3341 17.4265 21.2959 17.5793L12.9304 19.1133L21.2253 17.9483C21.2171 18.0082 21.2082 18.0675 21.2032 18.1221L10.4582 20.168L21.1865 18.4845L21.1862 18.5088L9.21553 20.7416C9.20959 20.7435 8.65629 20.8713 8.17091 20.7412C7.69133 20.6127 7.4585 20.2863 7.45799 19.7434C7.45635 18.3485 9.64401 18.1442 9.67698 18.1414L21.9582 16.3289C21.8404 16.4526 21.7461 16.5857 21.6612 16.7202L13.7938 18.1369L21.4577 17.1071Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1525_2809">
+                                            <rect width="24" height="22.2485" fill="white"
+                                                transform="translate(0.486816 0.319336)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Научно-педагогический стаж :
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="####" onclick="
+            document.querySelector('.opened-tabs').style.display='flex';
+            document.querySelector('.head').style.display='flex';
+            document.querySelector('.apezova-cards').style.display='none'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                    <path d="M7 1L1 6L7 11" stroke="#666666" />
+                </svg>
+                Назад
+            </a>
+        </div>
+
+        <footer>
+            <div class="footer-slide-content">
+                <div class="footer-left">
+
+                    <div class="left-desc">
+                        <div class="left">
+                            <p class="name">
+                                Бишкекский Международный Медицинский Институт
+                            </p>
+                            <p class="time-desc">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M9.99984 18.3332C14.6022 18.3332 18.3332 14.6022 18.3332 9.99984C18.3332 5.39746 14.6022 1.6665 9.99984 1.6665C5.39746 1.6665 1.6665 5.39746 1.6665 9.99984C1.6665 14.6022 5.39746 18.3332 9.99984 18.3332Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.5 13.3333L10.4883 11.3217C10.1758 11.0092 10.0001 10.5853 10 10.1433V5"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Часы работы
+                            </p>
+                            <p class="time-days">
+                                Понедельник - Суббота
+                            </p>
+                            <p>
+                                8:30 - 17:30
+                            </p>
+                        </div>
+
+                        <div class="right">
+                            <a href="####">
+                                Главная
+                            </a>
+                            <a href="####">
+                                БММИ
+                            </a>
+                            <a href="####">
+                                Студентам
+                            </a>
+                            <a href="####">
+                                Абитуриентам
+                            </a>
+                            <a href="####">
+                                Поступление
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-watermark">
+                        © Бишкекский международный медицинский институт. Все права защищены.
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="footer-contacts">
+                        <h1>Контакты</h1>
+                        <div class="address">
+                            <p class="number">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_2321_8248)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.3507 0.446887C12.1976 0.294015 12.0138 0.175426 11.8114 0.0989785C11.609 0.0225313 11.3926 -0.0100283 11.1767 0.00345734C10.9607 0.016943 10.7501 0.0761661 10.5588 0.177202C10.3675 0.278238 10.1998 0.418779 10.067 0.589512L8.49633 2.60726C8.20845 2.97739 8.10695 3.45951 8.2207 3.91451L8.69933 5.83076C8.72407 5.93001 8.72274 6.03398 8.69545 6.13256C8.66816 6.23114 8.61584 6.32099 8.54358 6.39339L6.3937 8.54326C6.32122 8.61567 6.23122 8.66808 6.13247 8.69537C6.03372 8.72266 5.92958 8.72392 5.8302 8.69901L3.91483 8.22039C3.69029 8.16425 3.45593 8.15989 3.22946 8.20764C3.00299 8.25539 2.79033 8.354 2.60758 8.49601L0.589826 10.0658C-0.13555 10.6301 -0.202049 11.702 0.447201 12.3504L1.35195 13.2551C1.99945 13.9026 2.9672 14.187 3.86933 13.8694C6.17829 13.057 8.27471 11.7351 10.0031 10.0019C11.7362 8.27378 13.058 6.17766 13.8706 3.86901C14.1873 2.96776 13.903 1.99914 13.2555 1.35164L12.3507 0.446887Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2321_8248">
+                                            <rect width="14" height="14" fill="white"
+                                                transform="matrix(-1 0 0 1 14 0)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                +996 997 887 887
+                            </p>
+
+                            <p class="city">
+                                4, Шабдан Баатыра, 720022 Кыргызская Республика
+                            </p>
+
+                            <p class="mailOne">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
+                                    fill="none">
+                                    <path
+                                        d="M14.5515 14.0226H1.73271C1.30775 14.0226 0.900184 13.8379 0.599686 13.5092C0.299189 13.1805 0.130371 12.7346 0.130371 12.2698V1.67658C0.148343 1.22504 0.325063 0.79855 0.623635 0.486146C0.922206 0.173742 1.31955 -0.000427021 1.73271 7.86246e-07H14.5515C14.9764 7.86246e-07 15.384 0.184673 15.6845 0.51339C15.985 0.842108 16.1538 1.28795 16.1538 1.75282V12.2698C16.1538 12.7346 15.985 13.1805 15.6845 13.5092C15.384 13.8379 14.9764 14.0226 14.5515 14.0226ZM1.73271 3.38996V12.2698H14.5515V3.38996L8.14208 8.06298L1.73271 3.38996ZM2.37365 1.75282L8.14208 5.9596L13.9105 1.75282H2.37365Z"
+                                        fill="white" />
+                                </svg>
+                                bimi_official@gmail.ru
+                            </p>
+
+                            <p class="mailTwo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
+                                    fill="none">
+                                    <path
+                                        d="M14.5515 14.0226H1.73271C1.30775 14.0226 0.900184 13.8379 0.599686 13.5092C0.299189 13.1805 0.130371 12.7346 0.130371 12.2698V1.67658C0.148343 1.22504 0.325063 0.79855 0.623635 0.486146C0.922206 0.173742 1.31955 -0.000427021 1.73271 7.86246e-07H14.5515C14.9764 7.86246e-07 15.384 0.184673 15.6845 0.51339C15.985 0.842108 16.1538 1.28795 16.1538 1.75282V12.2698C16.1538 12.7346 15.985 13.1805 15.6845 13.5092C15.384 13.8379 14.9764 14.0226 14.5515 14.0226ZM1.73271 3.38996V12.2698H14.5515V3.38996L8.14208 8.06298L1.73271 3.38996ZM2.37365 1.75282L8.14208 5.9596L13.9105 1.75282H2.37365Z"
+                                        fill="white" />
+                                </svg>
+                                bimi.edu.kg@gmail.com
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h1> Социальные сети</h1>
+                        <div class="links">
+                            <a href="https://www.vk.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 42 40"
+                                    fill="none">
+                                    <circle cx="22" cy="20" r="19.5" stroke="#C0C0C0" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M31.5413 14.8126C31.6796 14.3446 31.5413 14 30.8788 14H28.6913C28.1347 14 27.878 14.2974 27.7388 14.6257C27.7388 14.6257 26.6264 17.3651 25.0506 19.1446C24.5406 19.6606 24.3089 19.8243 24.0306 19.8243C23.8914 19.8243 23.6823 19.6606 23.6823 19.1917V14.8126C23.6823 14.2503 23.5289 14 23.0656 14H19.6257C19.2782 14 19.069 14.2606 19.069 14.5083C19.069 15.0406 19.8573 15.164 19.9382 16.6623V19.9177C19.9382 20.6317 19.8107 20.7611 19.5323 20.7611C18.7907 20.7611 16.9866 18.0089 15.9158 14.8597C15.7083 14.2469 15.4983 14 14.9391 14H12.75C12.125 14 12 14.2974 12 14.6257C12 15.2103 12.7417 18.1143 15.4541 21.9551C17.2624 24.578 19.8082 26 22.1273 26C23.5181 26 23.6898 25.6846 23.6898 25.1403V23.1577C23.6898 22.526 23.8214 22.4 24.2622 22.4C24.5872 22.4 25.1431 22.5646 26.4414 23.8289C27.9247 25.328 28.1688 26 29.0038 26H31.1913C31.8163 26 32.1296 25.6846 31.9496 25.0606C31.7513 24.44 31.0429 23.5391 30.1038 22.4703C29.5938 21.8617 28.8288 21.206 28.5963 20.8777C28.2722 20.4569 28.3647 20.2691 28.5963 19.8946C28.5963 19.8946 31.2629 16.1009 31.5404 14.8126H31.5413Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 42 40"
+                                    fill="none">
+                                    <circle cx="22" cy="20" r="19.5" stroke="#C0C0C0" />
+                                    <path
+                                        d="M21.9922 14.8481C20.6302 14.8481 19.324 15.3883 18.3609 16.3499C17.3978 17.3115 16.8567 18.6157 16.8567 19.9756C16.8567 21.3355 17.3978 22.6397 18.3609 23.6013C19.324 24.5629 20.6302 25.1031 21.9922 25.1031C23.3542 25.1031 24.6605 24.5629 25.6236 23.6013C26.5867 22.6397 27.1277 21.3355 27.1277 19.9756C27.1277 18.6157 26.5867 17.3115 25.6236 16.3499C24.6605 15.3883 23.3542 14.8481 21.9922 14.8481ZM21.9922 23.3056C21.1074 23.3056 20.2588 22.9547 19.6331 22.33C19.0074 21.7052 18.6559 20.858 18.6559 19.9745C18.6559 19.091 19.0074 18.2437 19.6331 17.619C20.2588 16.9943 21.1074 16.6434 21.9922 16.6434C22.8771 16.6434 23.7257 16.9943 24.3513 17.619C24.977 18.2437 25.3285 19.091 25.3285 19.9745C25.3285 20.858 24.977 21.7052 24.3513 22.33C23.7257 22.9547 22.8771 23.3056 21.9922 23.3056Z"
+                                        fill="white" />
+                                    <path
+                                        d="M27.331 15.855C27.9922 15.855 28.5282 15.3198 28.5282 14.6596C28.5282 13.9994 27.9922 13.4642 27.331 13.4642C26.6697 13.4642 26.1337 13.9994 26.1337 14.6596C26.1337 15.3198 26.6697 15.855 27.331 15.855Z"
+                                        fill="white" />
+                                    <path
+                                        d="M31.4702 13.4442C31.2131 12.7813 30.8202 12.1793 30.3167 11.6767C29.8131 11.1741 29.21 10.7821 28.546 10.5256C27.7689 10.2344 26.948 10.0769 26.1182 10.0599C25.0486 10.0133 24.7099 10 21.9978 10C19.2857 10 18.938 10 17.8774 10.0599C17.0482 10.076 16.2279 10.2335 15.4518 10.5256C14.7876 10.7818 14.1843 11.1737 13.6807 11.6763C13.1771 12.179 12.7843 12.7811 12.5275 13.4442C12.2358 14.22 12.0784 15.0397 12.0622 15.8683C12.0144 16.935 12 17.2732 12 19.9823C12 22.6902 12 23.035 12.0622 24.0963C12.0789 24.9257 12.2355 25.7441 12.5275 26.5214C12.7851 27.1843 13.1782 27.7862 13.682 28.2887C14.1857 28.7913 14.7888 29.1834 15.4529 29.44C16.2275 29.743 17.0482 29.9117 17.8796 29.939C18.9491 29.9856 19.2879 30 22 30C24.7121 30 25.0598 30 26.1204 29.939C26.9501 29.9222 27.771 29.7651 28.5482 29.4744C29.2121 29.2173 29.815 28.8249 30.3185 28.3222C30.822 27.8195 31.215 27.2175 31.4725 26.5547C31.7645 25.7784 31.9211 24.9601 31.9378 24.1306C31.9856 23.0639 32 22.7257 32 20.0166C32 17.3076 32 16.9639 31.9378 15.9026C31.9249 15.0624 31.7667 14.2307 31.4702 13.4442ZM30.1175 24.0142C30.1103 24.6533 29.9935 25.2864 29.7721 25.886C29.6053 26.3172 29.35 26.7088 29.0225 27.0356C28.695 27.3623 28.3027 27.617 27.8707 27.7833C27.2768 28.0034 26.6494 28.12 26.016 28.1282C24.9609 28.177 24.6633 28.1892 21.9578 28.1892C19.2501 28.1892 18.9736 28.1892 17.8985 28.1282C17.2654 28.1205 16.6383 28.0038 16.0449 27.7833C15.6114 27.6181 15.2175 27.3638 14.8886 27.037C14.5597 26.7102 14.3032 26.318 14.1357 25.886C13.9174 25.2928 13.8007 24.6672 13.7903 24.0353C13.7426 22.9818 13.7315 22.6846 13.7315 19.9834C13.7315 17.281 13.7315 17.0049 13.7903 15.9304C13.7975 15.2917 13.9143 14.6589 14.1357 14.0597C14.4745 13.1847 15.1686 12.4961 16.0449 12.1612C16.6386 11.9418 17.2655 11.8252 17.8985 11.8164C18.9547 11.7687 19.2512 11.7554 21.9578 11.7554C24.6644 11.7554 24.942 11.7554 26.016 11.8164C26.6495 11.824 27.2769 11.9406 27.8707 12.1612C28.3027 12.3279 28.695 12.5828 29.0224 12.9098C29.3498 13.2367 29.6052 13.6284 29.7721 14.0597C29.9904 14.6529 30.1072 15.2785 30.1175 15.9104C30.1653 16.965 30.1775 17.261 30.1775 19.9634C30.1775 22.6647 30.1775 22.9552 30.1297 24.0153H30.1175V24.0142Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 42 40"
+                                    fill="none">
+                                    <circle cx="22" cy="20" r="19.5" stroke="#C0C0C0" />
+                                    <path
+                                        d="M18.808 31V20.677H16V16.9602H18.808V13.7855C18.808 11.2909 20.4668 9 24.2888 9C25.8363 9 26.9806 9.14421 26.9806 9.14421L26.8904 12.6151C26.8904 12.6151 25.7234 12.604 24.45 12.604C23.0717 12.604 22.8508 13.2214 22.8508 14.2462V16.9602H27L26.8195 20.677H22.8508V31H18.808Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <button class="contact-us">
+                            Связаться с нами
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
