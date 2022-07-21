@@ -506,8 +506,8 @@ header .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 91%;
-    justify-content: space-evenly;
+    width: 87%;
+    justify-content: space-between;
 
 }
 
@@ -548,7 +548,7 @@ header .logo {
 
 .window-third-slide{
     margin-top: 3%;
-    width: 85%;
+    width: 86%;
     height: 112vh;
     background-image: url('../../img/third-slide-bg.png');
 
@@ -723,7 +723,7 @@ header .logo {
     align-items: center;
 }
 .window-sixth-slide .sixth-slide-content{
-    width: 90%;
+    width: 88%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -826,10 +826,8 @@ header .logo {
 
 }
 
-
 .window-seventh-slide{
     width: 88%;
-    height: 65vh;
 }
 .window-seventh-slide img{
     width: 280px;
@@ -922,7 +920,7 @@ header .logo {
     height: 53vh;
     background-image: url('../../img/8sllideBG.png');
 
-    margin-top: 30px;
+    margin-top: 42px;
     margin-bottom: 100px;
 
     display: flex;
@@ -954,6 +952,7 @@ header .logo {
     border: none;
 
     font-family: 'Ubuntu' ;
+    font-size: 16px;
     transition: .3s;
 
 
@@ -963,10 +962,7 @@ header .logo {
     color: #fff;
     transition: .3s;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> aa02acaa29ea4351259720f39a5ac779e6a6c02c
 footer{
     width: 100%;
     height: 46vh;
