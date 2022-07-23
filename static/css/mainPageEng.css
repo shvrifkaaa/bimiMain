@@ -451,7 +451,7 @@ header .logo {
     flex-direction: row;
     justify-content: space-around;
     position: absolute;
-    top: 72vh;
+    top: 79vh;
 }
 .first-slide-btn-block a {
     width: 16.5%;
