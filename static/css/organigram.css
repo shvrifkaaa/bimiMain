@@ -667,7 +667,6 @@ header .logo {
     font-weight: 400;
     font-family: 'PT Serif';
 }
-/* ///////////////////// */
 .managers-cards{
     width: 100%;
 
@@ -725,7 +724,6 @@ header .logo {
     flex-direction: column;
 }
 .rector-more .rector-content .top-card{
-    /* width: 91%; */
     height: 33%;
     
     display: flex;
