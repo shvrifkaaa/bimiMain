@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'PT Serif'; */
+    background: #f3f6ff;
+    font-family: monospace;
+}
+
+.main--page-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.lang-menu {
+    display: flex;
+    justify-content: right;
+    width: 16%;
+    height: 40px;
+    border-radius: 10%;
+    font-weight: bold;
+    margin-top: 55px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    cursor: pointer;
+    border: 0.1px solid #c4c4c4;
+    border-radius: 10%;
+    padding-top: 8px;
+
+    height: 40px;
+    width: 95px;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    height: 53vh;
+    width: 66%;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+}
+
+.logo-block {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+#imgLogo {
+    width: 100%;
+    height: 40vh;
+}
+
+.login-block {
+    width: 40%;
+}
+
+.login-block h2 {
+    font-family: PT Sans;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: left;
+
+    padding-left: 40px;
+    padding-top: 45px;
+}
+
+.login-block span {
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    padding-left: 40px;
+    color: #929292;
+}
+
+#login-block {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    padding-left: 10px;
+}
+
+.input-block {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.input-block input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 20px;
+    outline: 0;
+
+    width: 465px;
+    height: 40px;
+
+    background: white;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.input-block img {
+    width: 16px;
+    height: 13px;
+}
+
+#inp1 {
+    background: url(../../img/inputMail_img.png) no-repeat center left 5px;
+    background-size: 20px;
+    padding-left: 30px;
+}
+
+#inp2 {
+    background: url(../../img/zamok.png) no-repeat center left 5px;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.input-block input:valid {
+    border: 2px solid #8ca7f8;
+}
+
+.forgot-password {
+    display: flex;
+    padding-top: 1px;
+    font-family: PT Sans;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+}
+
+.input-bottom{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
