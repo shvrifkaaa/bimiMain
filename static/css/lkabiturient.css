@@ -27,11 +27,9 @@ body {
 .lang-menu {
     display: flex;
     justify-content: right;
-    width: 16%;
-    height: 40px;
+
     border-radius: 10%;
     font-weight: bold;
-    margin-top: 55px;
     padding-right: 50px;
     position: relative;
 }
@@ -94,8 +92,8 @@ body {
 .container {
     margin-top: 10%;
     display: flex;
-    height: 53vh;
-    width: 66%;
+    height: 60vh;
+    width: 75%;
 
 
     background: #FFFFFF;
@@ -105,6 +103,7 @@ body {
 }
 
 .logo-block {
+    width: 50%;
     padding-top: 50px;
     padding-left: 30px;
 }
@@ -114,8 +113,19 @@ body {
     height: 40vh;
 }
 
+
 .login-block {
-    width: 40%;
+    width: 70%;
+}
+
+.log-in-block {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .login-block h2 {
@@ -123,10 +133,9 @@ body {
     font-size: 38px;
     font-weight: 700;
     line-height: 47px;
-    text-align: left;
+    text-align: center;
 
-    padding-left: 40px;
-    padding-top: 45px;
+    width: 58%;
 }
 
 .login-block span {
@@ -152,8 +161,9 @@ body {
 }
 
 .input-block {
+    padding-left: 25px;
     margin-top: 15px;
-    margin-left: 40px;
+    margin-left: 15px;
 }
 
 .input-block input {
@@ -163,7 +173,7 @@ body {
     padding: 12px 20px;
     outline: 0;
 
-    width: 465px;
+    width: 91%;
     height: 40px;
 
     background: white;
@@ -206,8 +216,44 @@ body {
     text-align: right;
 }
 
-.input-bottom{
-    display: flex;
-    flex-wrap: nowrap;
+.input-bottom {
     width: 100%;
+    height: 14%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.input-bottom span {
+    width: 40%;
+}
+
+.input-bottom a {
+    display: flex;
+    justify-content: center;
+    width: 42%;
+}
+
+.input-btn {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+
+.input-btn a {
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 7px;
+
+    background: #1C41B0;
+    color: white;
+    border-radius: 5px;
+
+    height: 6.16vh;
+    width: 85%;
 }

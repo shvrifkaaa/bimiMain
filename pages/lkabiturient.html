@@ -16,8 +16,26 @@
                 <img src="../img/test_logo.png" id="imgLogo" alt="">
             </div>
             <div class="login-block">
-                <h2>Вход в систему</h2>
-                <span>Еще нет страницы?</span><a style="font-weight:700; color: #1c41b0;text-decoration: none;"
+                
+                <div class="log-in-block">
+                                  <h2>Вход в систему</h2>
+
+                  
+                                  <div class="lang-menu">
+                    <div class="selected-lang">
+                        Русский
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./mainPage.html" class="ru">Русский</a>
+                        </li>
+                        <li>
+                            <a href="./mainPageEng.html" class="en">English</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <span>Еще нет страницы?</span><a style="font-weight:700; color: #1c41b0;text-decoration: none;cursor: pointer;"
                     id="login-block" onclick="
         document.querySelector('#login-block').style.display='none';
         document.querySelector('.login-block').style.display='none';
@@ -33,19 +51,10 @@
                         <label for="checkbox">Запомнить меня</label></span>
                     <a class="forgot-password" style="color: #929292;text-decoration: none;">Восстановление пароля</a>
                 </div>
-            </div>
-            <div class="lang-menu">
-                <div class="selected-lang">
-                    Русский
+                <div class="input-btn">
+                    <a href="###" style="text-decoration: none;">Войти</a>
                 </div>
-                <ul>
-                    <li>
-                        <a href="./mainPage.html" class="ru">Русский</a>
-                    </li>
-                    <li>
-                        <a href="./mainPageEng.html" class="en">English</a>
-                    </li>
-                </ul>
+
             </div>
 
         </div>
