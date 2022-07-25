@@ -817,6 +817,8 @@ footer .footer-slide-content .footer-left .footer-watermark{
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font-family: 'PT sans';
+    font-size: 12px;
 }
 
 footer .footer-slide-content .footer-left .left-desc .left{

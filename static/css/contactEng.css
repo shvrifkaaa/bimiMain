@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
 .header {
@@ -183,7 +184,7 @@ header .navbar .navbar-students:hover>.navbar-students-dropdown {
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 32  vh;
+    height: 46vh;
     width: 18%;
     box-shadow: 5px;
 }
@@ -424,11 +425,11 @@ header .logo {
 .lang-menu:hover ul {
     display: block;
 }
-
+.opened-tabs{
+    width: 83%;
+    margin-top: 48px;
+}
 .tabs-list {
-    position: absolute;
-    left: 8.9%;
-    top: 12%;
 
     font-family: PT Sans;
     font-size: 14px;
@@ -436,6 +437,15 @@ header .logo {
     line-height: 26px;
 }
 
+.contact-title {
+
+    height: 54px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 49px;
+}
 .contact-title h1 {
     font-family: PT Serif;
     font-size: 35px;
@@ -444,20 +454,9 @@ header .logo {
     text-align: left;
     color: #1c41b0;
 
-}
-
-.contact-title h1 {
     width: 90%;
     padding-bottom: 25px;
     border-bottom: 1px solid #000000;
-}
-
-.contact-title {
-    position: absolute;
-    left: 8.9%;
-    top: 15.4%;
-    height: 54px;
-    width: 89.8%;
 }
 
 .add-card h1 {
@@ -480,11 +479,8 @@ header .logo {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 78vh;
-    width: 90%;
-    padding-top: 250px;
-    padding-left: 75px;
-
+    height: 70vh;
+    width: 91%;
 }
 
 .write-us h1 {
@@ -500,10 +496,9 @@ header .logo {
     display: flex;
     justify-content: right;
     align-items: flex-start;
-    width: 23%;
-    height: 10vh;
+    flex-direction: column;
+    width: 83%;
     margin-top: 30px;
-
 }
 
 .contact-input-block {
@@ -511,13 +506,9 @@ header .logo {
     flex-direction: column;
     align-items: flex-start;
 
-    width:  60%;
+    width:  64%;
     height: 51vh;
-
-    padding: 12px 20px;
-    padding-left: 130px;
     gap: 10px;
-
 }
 
 .contact-input-block input {
@@ -528,8 +519,8 @@ header .logo {
     gap: 10px;
     outline: 0;
 
-    width: 684px;
-    height: 43px;
+    width: 80%;
+    height: 6.62vh;
 
     background: rgba(206, 217, 255, 0.2);
     border: 1px solid #C4C4C4;
@@ -552,11 +543,23 @@ header .logo {
     flex-direction: row;
     padding: 12px 20px 120px;
 
-    width: 684px;
-    height: 151px;
+    width: 80%;
+    height: 23.246vh;
 
     order: 3;
+    resize: none;
+    background: rgba(206, 217, 255, 0.2);
+    border: 1px solid #C4C4C4;
+    box-shadow: inset 0px 0px 10px rgba(40, 87, 254, 0.25);
+    border-radius: 5px;
+    overflow:hidden;
+    outline: 0;
 }
+
+#inp4:focus { border: 2px solid #467AFF;}
+
+#inp4 textarea:focus::-webkit-input-placeholder {color: transparent}
+
 
 .contact-btn a {
     font-family: 'Ubuntu';
@@ -576,10 +579,9 @@ header .logo {
 
 .contact-btn {
     display: flex;
-    justify-content: center;
-    width: 26%;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    justify-content: flex-start;
+    width: 84%;
+    margin-bottom: 100px;
 }
 
 .contact-btn a:hover {
@@ -604,14 +606,13 @@ header .logo {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    width: 65%;
-    padding-left: 4.6%;
-    padding-top: 0.7%;
+    width: 38%;
 }
 
 .ingo {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 83%;
 }
 
 .contact-phone {
@@ -671,6 +672,8 @@ footer .footer-slide-content .footer-left .footer-watermark {
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font: 12px;
+    font-family: 'PT sans';
 }
 
 footer .footer-slide-content .footer-left .left-desc .left {
