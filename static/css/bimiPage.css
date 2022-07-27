@@ -355,7 +355,8 @@ header .logo {
 
 .lang-menu .selected-lang:before {
     content: '';
-    display: inline-block;
+    display: block;
+    margin-right: 10px;
     width: 32px;
     height: 32px;
     background-image: url(../../img/russian_flag.png);
