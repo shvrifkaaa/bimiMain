@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0 ;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'PT Serif'; */
+    background: #f3f6ff;
+    font-family: monospace;
+}
+
+.main--page-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    background: white;
+
+    box-shadow: 0 0 10px 0;
+}
+
+header .header-logo-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+header .header-logo-name img {
+    width: 65px;
+    height: 50px;
+}
+
+header .header-logo-name .header-name {
+    width: 78%;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #1c41b0;
+    font-family: monospace;
+}
+
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: fit-content;
+}
+
+header .navbar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+header .navbar div p {
+    font-family: 'PT Serif';
+    font-size: 16px;
+    font-weight: 700;
+    cursor: context-menu;
+    padding: 3px;
+}
+
+header .navbar div p:hover {
+    color: #1c41b0;
+}
+
+header .navbar .navbar-univer-dropdown {
+    display: none;
+
+}
+
+header .navbar .navbar-univer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-univer:hover .navbar-univer-dropdown {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 28vh;
+    width: 18%;
+}
+
+header .navbar .navbar-univer:hover .navbar-univer-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-univer .navbar-univer-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div {
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover {
+    background: #2857fe;
+    transition: .2s;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div:hover a {
+    color: white;
+}
+
+header .navbar .navbar-univer .navbar-univer-dropdown div a {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #494848;
+}
+
+header .navbar .navbar-students {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown {
+    display: none;
+}
+
+header .navbar .navbar-students:hover>.navbar-students-dropdown {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 46vh;
+    width: 18%;
+    box-shadow: 5px;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div {
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div:hover {
+    background: #2857fe;
+    transition: .2s;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div:hover a {
+    color: white;
+}
+
+header .navbar .navbar-students .navbar-students-dropdown div a {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #494848;
+}
+
+header .navbar .navbar-students:hover .navbar-students-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-students .navbar-students-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .navbar .navbar-abiturient {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown {
+    display: none;
+}
+
+header .navbar .navbar-abiturient:hover .navbar-abiturient-dropdown {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    background: white;
+    height: 33vh;
+    width: 22%;
+    box-shadow: 5px;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div {
+    width: 100%;
+    height: 25%;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover {
+    background: #2857fe;
+    transition: .2s;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div:hover a {
+    color: white;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-dropdown div a {
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    color: #494848;
+
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #494848;
+}
+
+header .navbar .navbar-abiturient:hover .navbar-abiturient-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-abiturient .navbar-abiturient-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .navbar .navbar-science:hover .navbar-science-text svg {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+header .navbar .navbar-science .navbar-science-text svg {
+    transition: .5s;
+    margin-left: 5px;
+}
+
+header .logo {
+    width: 3%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 30%;
+    margin: 0 auto;
+}
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+}
+
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/us_flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ru:before {
+    background-image: url(../../img/russian_flag.png);
+}
+
+.en:before {
+    background-image: url(../../img/us_flag.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+.opened-tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 94%;
+
+    margin-top: 25px;
+}
+
+.tabs-list {
+
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.abiturients-page-content{
+    width: 96%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+.abiturients-page-content .navbar-block{
+    display: flex;
+    flex-direction: column;
+    width: 22.6%;
+    height: 42vh;
+    border: 0.5px solid #1c41b0;
+    border-top: 2px solid #1c41b0;
+    padding: 20px;
+
+}
+.abiturients-page-content .navbar-block .title{
+    color: #1c41b0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'PT Sans';
+
+    height: 27%;
+    
+}
+.abiturients-page-content .navbar-block .navbar-content{
+    height: 73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.abiturients-page-content .navbar-block .navbar-content p{
+    width: 100%;
+    
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #636363;
+    cursor: pointer;
+
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 12px;
+}
+.abiturients-page-content .navbar-block .navbar-content .statement{
+    border: none;
+}
+.abiturients-page-content .content-side {
+    width: 68%;
+    height: 100%;
+}
+.abiturients-page-content .content-side .rules-to-invite{
+    height: 100%;
+}
+.abiturients-page-content .content-side .rules-to-invite h1{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'PT Serif';
+    color: #1c41b0;
+
+    margin-bottom: 30px;
+}
+.abiturients-page-content .content-side .rules-to-invite .content-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 16px;
+    font-family: 'PT Sans';
+    color: #000;
+}
+.abiturients-page-content .content-side .rules-to-invite .content-desc p{
+    padding: 10px 0;
+}
+.abiturients-page-content .content-side .rules-to-invite .content-desc .desc{
+    color: #2857fe;
+}
+.abiturients-page-content .content-side .docs-to-invite{
+    height: 130vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-one{
+    height: 20%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: 'PT Sans';
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-one h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #1c41b0;
+}
+.abiturients-page-content .content-side .docs-to-invite p1{
+    color: #1c41b0;
+    font-size: 16px;
+    font-family: 'PT Sans';
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-two{
+    height: 41%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-two h1{
+    font-weight: 700;
+    font-family: 'PT Sans';
+    color: #1c41b0;
+    font-size: 24px;
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-two p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    line-height: 26px;
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-three{
+    height: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-three h1{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'PT Serif';
+    color: #1c41b0;
+    
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-three p1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c41b0;
+    font-family: 'PT Sans';
+    padding: 10px 0;
+
+}
+.abiturients-page-content .content-side .docs-to-invite .desc-three p{
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #000;
+    font-size: 16px;
+}
+.abiturients-page-content .content-side .after-arrival{
+    height: 75%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.abiturients-page-content .content-side .after-arrival h1{
+    color: #1c41b0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'PT Sans';
+
+}
+.abiturients-page-content .content-side .after-arrival p1{
+    color: #1c41b0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+}
+.abiturients-page-content .content-side .after-arrival p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    line-height: 28px;
+}
+.abiturients-page-content .content-side .invite-statement{
+    flex-direction: column;
+    height: 93vh;
+    justify-content: space-between;
+}
+.abiturients-page-content .content-side .invite-statement h1{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'PT Sans';
+    color: #1c41b0;
+}
+.abiturients-page-content .content-side .invite-statement p{
+    font-weight: 400;
+    font-style: 16px;
+    font-family: 'PT Sans';
+}
+.abiturients-page-content .content-side .invite-statement .personal-area-content h1{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'PT Serif';
+    color: #1c41b0;
+
+}
+.abiturients-page-content .content-side .invite-statement .personal-area-content p{
+    width: 34%;
+    
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'PT Serif';
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #2857fe;
+    color: #fff;
+    transition: .3s;
+}
+.abiturients-page-content .content-side .invite-statement .personal-area-content p:hover{
+    background-color: #68f;
+    transition: .3s;
+}
+
+.abiturients-page-content .content-side .invite-statement .consultation h1{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'PT Serif';
+    color: #1c41b0;
+    margin-bottom: 15px;
+    
+}
+
+.abiturients-page-content .content-side .invite-statement .consultation p1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c41b0;
+    font-family: 'PT Sans';
+    padding: 10px 0;
+
+}
+
+.abiturients-page-content .content-side .invite-statement .consultation p{
+    font-weight: 400;
+    font-family: 'PT Sans';
+    color: #000;
+    font-size: 16px;
+}
+
+.main--page-block .end-img{
+    margin-top: 70px;
+}
+
+footer{
+    width: 100%;
+    height: 46vh;
+    background: #0f2149;
+    color: #fff;
+}
+footer .footer-slide-content{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+footer .footer-slide-content .footer-left{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footer-slide-content .footer-left .left-desc{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .footer-slide-content .footer-left .footer-watermark{
+    width: 85%;
+    margin-left: 50px;
+    padding-top: 25px;
+    border-top: .5px solid #bbb;
+    font-family: 'PT sans';
+    font-size: 12px;
+}
+
+footer .footer-slide-content .footer-left .left-desc .left{
+    width: 35%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family: 'PT sans';
+}
+footer .footer-slide-content .footer-left .left-desc .left .name{
+    width: 85%;;
+    
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bbb;
+
+}
+footer .footer-slide-content .footer-left .left-desc .left .time-desc{
+    padding-top: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+footer .footer-slide-content .footer-left .left-desc .left .time-desc svg{
+    margin-right: 5px;
+
+}
+footer .footer-slide-content .footer-left .left-desc .left .time-days{
+    padding: 10px 0;
+
+}
+footer .footer-slide-content .footer-left .left-desc .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    line-height: 182%;
+    font-family: 'PT Sans';
+    font-size: 17px;
+}
+footer .footer-slide-content .footer-left .left-desc .right a{
+    text-decoration: none;
+    color: #fff;
+    transition: .2;
+}
+footer .footer-slide-content .footer-left .left-desc .right a:hover{
+    color: #1c41b0;
+    transition: .2;
+}
+footer .footer-slide-content .footer-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+footer .footer-slide-content .footer-right .footer-contacts{
+    width: 48%;
+    height: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+footer .footer-slide-content .footer-right .footer-contacts h1{
+    width: 71%;
+
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 4px solid #dcbe76 ;
+}
+
+footer .footer-slide-content .footer-right .footer-contacts .address{
+    width: 85%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    
+}
+footer .footer-slide-content .footer-right .footer-contacts .address p{
+    padding: 4% 0;
+
+    font-size: 16px;
+    font-family: 'PT Sans';
+}
+footer .footer-slide-content .footer-right .footer-links{
+    width: 43%;
+    height: 83%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    margin: -1%;
+}
+footer .footer-slide-content .footer-right .footer-links h1{
+    width: 90%;
+
+    border-bottom: 4px solid #dcbe76;
+}
+
+footer .footer-slide-content .footer-right .footer-links .links{
+    width: 75%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer .footer-slide-content .footer-right .footer-links .contact-us{
+    width: 55%;
+    height: 16%;
+
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    background: #1C41B0;
+    transition: .2s;
+
+    margin-left: 12%;
+}
+footer .footer-slide-content .footer-right .footer-links .contact-us:hover{
+    background-color: #fff;
+    color: #1c41b0;
+    transition: .2s;
+}
