@@ -383,6 +383,10 @@ body {
     flex-grow: 0;
 }
 
+.reg-input-block input:valid {
+    border: 2px solid #8ca7f8;
+}
+
 #reg-inp1 {
     background: url(../../img/inputMail_img.png) no-repeat center left 5px;
     background-size: 20px;
@@ -480,4 +484,165 @@ body {
 
     height: 6.16vh;
     width: 90%;
+}
+
+.res-lang-menu {
+    display: flex;
+    justify-content: right;
+    height: 28vh;
+    border-radius: 10%;
+    font-weight: bold;
+    position: relative;
+    padding-right: 10%;
+}
+
+.res-lang-menu .res-selected-lang {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    cursor: pointer;
+    border: 0.1px solid #c4c4c4;
+    border-radius: 10%;
+    padding-top: 8px;
+
+    height: 40px;
+    width: 95px;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+
+.res-lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.res-lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.res-lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.res-lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.res-lang-menu:hover ul {
+    display: block;
+}
+
+.reset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.reset-logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 65%;
+    height: 39vh;
+}
+
+.reset-logo img {
+    height: 30vh;
+    width: 60%;
+}
+
+.reset-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 71%;
+    height: 10vh;
+    padding-top: 5%;
+}
+
+
+
+.reset-top h2 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    height: 0vh;
+
+    color: #000000;
+}
+
+.reset-title {
+    padding-top: 3%;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    width: 92%;
+
+    color: #0F2149;
+}
+
+#res-inp1 {
+    height: 6vh;
+    width: 99%;
+    background: white;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.reset-title input:valid {
+    border: 2px solid #8ca7f8;
+}
+
+#res-inp1 {
+    background: url(../../img/inputMail_img.png) no-repeat center left 5px;
+    background-size: 20px;
+    padding-left: 30px;
+}
+
+.res-btn {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.res-btn a {
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 7px;
+
+    background: #1C41B0;
+    color: white;
+    border-radius: 5px;
+
+    height: 6.16vh;
+    width: 91%;
+
 }

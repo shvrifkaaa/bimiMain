@@ -57,8 +57,17 @@
                 <div class="input-bottom">
                     <span><input type="checkbox" name="" id="checkbox">
                         <label for="checkbox">Запомнить меня</label></span>
-                    <a class="forgot-password"
-                        style="color: #929292;text-decoration: none;cursor: pointer;">Восстановление пароля</a>
+                    <a class="forgot-password" style="color: #929292;text-decoration: none;cursor: pointer;" onclick="
+                        document.querySelector('#login-block').style.display='none';
+                        document.querySelector('.login-block').style.display='none';
+                        document.querySelector('.logo-block').style.display='none';
+
+                        document.querySelector('.container').style.height='49vh';
+                        document.querySelector('.container').style.width='75.4%';
+
+                        document.querySelector('.main--page-block').style.height='100vh';
+                        document.querySelector('.reset-block').style.display='block';
+                        ">Восстановление пароля</a>
                 </div>
                 <div class="input-btn">
                     <a href="###" style="text-decoration: none;">Войти</a>
@@ -86,11 +95,15 @@
                             </ul>
                         </div>
                         <div class="reg-input-block">
-                            <input type="text" required placeholder="E-mail" style="text-decoration: none;" id="reg-inp1">
+                            <input type="text" required placeholder="E-mail" style="text-decoration: none;"
+                                id="reg-inp1">
                             <input type="text" required placeholder="Имя" style="text-decoration: none;" id="reg-inp2">
-                            <input type="text" required placeholder="Фамилия" style="text-decoration: none;" id="reg-inp3">
-                            <input type="text" required placeholder="Отчество" style="text-decoration: none;" id="reg-inp4">
-                            <input type="text" required placeholder="Пароль" style="text-decoration: none;" id="reg-inp5">
+                            <input type="text" required placeholder="Фамилия" style="text-decoration: none;"
+                                id="reg-inp3">
+                            <input type="text" required placeholder="Отчество" style="text-decoration: none;"
+                                id="reg-inp4">
+                            <input type="text" required placeholder="Пароль" style="text-decoration: none;"
+                                id="reg-inp5">
                         </div>
                         <div class="password-hint">
                             <b>Для защиты Ваших данных необходимо придумать безопасный пароль. Он должен содержать:</b>
@@ -101,9 +114,11 @@
                                 - Знаки пунктуации (!,$,# или %)<br></p>
                         </div>
                         <div class="reg-repeat-password">
-                            <input type="text" id="repeater" required placeholder="Повторите пароль" style="text-decoration: none;">
+                            <input type="text" id="repeater" required placeholder="Повторите пароль"
+                                style="text-decoration: none;">
                             <span><input type="checkbox" name="" id="reg-repeat-pass>
-                            <label for="reg-repeat-pass">Я даю согласие на обработку моих персональных данных</label></span>
+                            <label for=" reg-repeat-pass">Я даю согласие на обработку моих персональных
+                                данных</label></span>
                         </div>
                         <div class="reg-btn">
                             <a href="###" style="text-decoration: none;">Зарегистрироваться</a>
@@ -111,8 +126,43 @@
                     </div>
                 </div>
             </div>
+
+            <div class="reset-block" style="display: none; width: 100%;">
+                <div class="reset">
+                    <div class="reset-logo"><img src="../img/test_logo.png" alt=""></div>
+                    <div class="reset-top">
+                        <h2>Восстановить пароль</h2>
+
+                        <div class="res-lang-menu">
+                            <div class="res-selected-lang">
+                                Русский
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="./lkabiturient.html" class="ru">Русский</a>
+                                </li>
+                                <li>
+                                    <a href="./mainPageEng.html" class="en">English</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="reset-title">
+                            <p>Enter email address used for registration. Follow the link that will be sent to that
+                            email address to
+                            restore your password.</p>
+
+                            <br><input type="text" required placeholder="E-mail" style="text-decoration: none;"
+                                id="res-inp1">
+                        </div>
+
+                        <div class="res-btn">
+                            <a href="###" style="text-decoration: none;">Отправить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
