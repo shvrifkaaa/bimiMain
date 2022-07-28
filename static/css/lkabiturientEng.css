@@ -135,7 +135,7 @@ body {
     line-height: 47px;
     text-align: center;
 
-    width: 58%;
+    width: 43%;
 }
 
 .login-block span {
@@ -233,7 +233,7 @@ body {
 .input-bottom a {
     display: flex;
     justify-content: center;
-    width: 42%;
+    width: 35%;
 }
 
 .input-btn {
@@ -601,7 +601,7 @@ body {
 
     font-family: 'PT Sans';
     font-style: normal;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 21px;
     width: 92%;
 
