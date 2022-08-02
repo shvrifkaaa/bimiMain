@@ -337,6 +337,14 @@ header .logo {
     justify-content: space-between; */
 }
 
+header .navbar-science-text{
+    font-family: 'PT Serif',  sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: context-menu;
+    
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -504,7 +512,9 @@ header .logo {
 .contact-input-block {
     display: flex;
     flex-direction: column;
-    width:  61%;
+    align-items: flex-start;
+
+    width:  64%;
     height: 51vh;
     gap: 10px;
 }
@@ -517,8 +527,8 @@ header .logo {
     gap: 10px;
     outline: 0;
 
-    width: 684px;
-    height: 43px;
+    width: 80%;
+    height: 6.62vh;
 
     background: rgba(206, 217, 255, 0.2);
     border: 1px solid #C4C4C4;
@@ -541,11 +551,23 @@ header .logo {
     flex-direction: row;
     padding: 12px 20px 120px;
 
-    width: 684px;
-    height: 151px;
+    width: 80%;
+    height: 23.246vh;
 
     order: 3;
+    resize: none;
+    background: rgba(206, 217, 255, 0.2);
+    border: 1px solid #C4C4C4;
+    box-shadow: inset 0px 0px 10px rgba(40, 87, 254, 0.25);
+    border-radius: 5px;
+    overflow:hidden;
+    outline: 0;
 }
+
+#inp4:focus { border: 2px solid #467AFF;}
+
+#inp4 textarea:focus::-webkit-input-placeholder {color: transparent}
+
 
 .contact-btn a {
     font-family: 'Ubuntu';
@@ -598,6 +620,7 @@ header .logo {
 .ingo {
     display: flex;
     justify-content: space-between;
+    width: 83%;
 }
 
 .contact-phone {
@@ -657,6 +680,8 @@ footer .footer-slide-content .footer-left .footer-watermark {
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font-size: 12px;
+    font-family: 'PT sans';
 }
 
 footer .footer-slide-content .footer-left .left-desc .left {

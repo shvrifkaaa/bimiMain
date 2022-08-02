@@ -338,6 +338,14 @@ header .logo {
     justify-content: space-between; */
 }
 
+header .navbar-science-text{
+    font-family: 'PT Serif',  sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: context-menu;
+    
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -1034,6 +1042,8 @@ footer .footer-slide-content .footer-left .footer-watermark{
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font-size: 12px;
+    font-family: 'PT sans';
 }
 
 footer .footer-slide-content .footer-left .left-desc .left{

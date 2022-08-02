@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Normative documents</title>
-    <link rel="stylesheet" href="../static/css/normativesEng.css">
+    <title>abiturient page</title>
+    <link rel="stylesheet" href="../static/css/abiturientEng.css">
 </head>
 
 <body>
-    <div class="normatives--page-block">
+    <div class="main--page-block">
 
         <div class="header">
             <header>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="navbar-science">
                         <div class="navbar-science-text">
-                            <a href="scientific-activities.html" style="text-decoration: none;color:#494848;"" >SCIENTIFIC ACTIVITY</a>
+                        <a href="scientific-activities.html" style="text-decoration: none;color:#494848;"" >SCIENTIFIC ACTIVITY</a>
                             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
                                 fill="none">
                                 <path d="M11 1L6 6L1 1" stroke="#0F2149" />
@@ -105,7 +105,9 @@
                         </div>
                     </div>
                     <div class="navbar-contacts">
-                        <a href="./contactEng.html" style="text-decoration: none;color:#494848;"><p>CONTACTS</p></a>
+                        <a href="./contactEng.html" style="text-decoration: none;color:#494848;">
+                            <p>CONTACTS</p>
+                        </a>
                     </div>
                 </div>
 
@@ -115,10 +117,10 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="./normatives.html" class="ru">Ru</a>
+                            <a href="./abiturients.html" class="ru">Ru</a>
                         </li>
                         <li>
-                            <a href="./normativesEng.html" class="en">En</a>
+                            <a href="./abiturientsEng.html" class="en">En</a>
                         </li>
 
                     </ul>
@@ -130,22 +132,259 @@
 
         <div class="opened-tabs">
             <div class="tabs-list">
-                <a href="./mainPageEng.html" style="text-decoration: none;color: #1c41b0;">Main &#9656;</a>
-                <a href="./normativesEng.html" style="text-decoration: none ;color: #1c41b0;">Normative documents</a>
+                <a href="./mainPage.html" style="text-decoration: none;color: #1c41b0;">Main &#9656;</a>
+                <a href="./abiturients.html" style="text-decoration: none ;color: #1c41b0;">Abiturients</a>
+            </div>
+
+        </div>
+        <div class="abiturients-page-content">
+            <div class="navbar-block">
+                <h1 class="title">
+                    Abiturients
+                </h1>
+                <div class="navbar-content">
+                    <p class="rules" style="color:#2857fe" onclick="
+                    document.querySelector('.rules-to-invite').style.display='block'
+                    document.querySelector('.rules').style.color= '#2857fe'
+                    document.querySelector('.docs').style.color= '#636363'
+                    document.querySelector('.docs-to-invite').style.display='none'
+                    document.querySelector('.after-arrival').style.display='none'
+                    document.querySelector('.aftercoming').style.color= '#636363'
+                    document.querySelector('.invite-statement').style.display='none'
+                    document.querySelector('.statement').style.color= '#636363'
+
+                    ">
+                        Rules for accepting documents</p>
+                    <p class="docs" onclick="
+                    document.querySelector('.docs-to-invite').style.display='flex'
+                    document.querySelector('.docs').style.color= '#2857fe'
+                    document.querySelector('.rules-to-invite').style.display='none'
+                    document.querySelector('.rules').style.color= '#636363'
+                    document.querySelector('.after-arrival').style.display='none'
+                    document.querySelector('.aftercoming').style.color= '#636363'
+                    document.querySelector('.invite-statement').style.display='none'
+                    document.querySelector('.statement').style.color= '#636363'
+                    ">Documents for applying</p>
+
+                    <p class="aftercoming" onclick="
+                    document.querySelector('.after-arrival').style.display='flex'
+                    document.querySelector('.aftercoming').style.color= '#2857fe'
+                    document.querySelector('.rules').style.color= '#636363'
+                    document.querySelector('.rules-to-invite').style.display='none'
+                    document.querySelector('.docs').style.color= '#636363'
+                    document.querySelector('.docs-to-invite').style.display='none'
+                    document.querySelector('.invite-statement').style.display='none'
+                    document.querySelector('.statement').style.color= '#636363'
+                    ">Applying after arrival</p>
+                    <p class="statement" onclick="
+                    document.querySelector('.invite-statement').style.display= 'flex'
+                    document.querySelector('.statement').style.color= '#2857fe'
+                    document.querySelector('.rules').style.color= '#636363'
+                    document.querySelector('.rules-to-invite').style.display='none'
+                    document.querySelector('.docs').style.color= '#636363'
+                    document.querySelector('.docs-to-invite').style.display='none'
+                    document.querySelector('.after-arrival').style.display='none'
+                    document.querySelector('.aftercoming').style.color= '#636363'
+                    "> Application for admission </p>
+                </div>
+            </div>
+
+            <div class="content-side">
+                <div class="rules-to-invite">
+                    <h1>
+                        BIMI admission rules
+                    </h1>
+                    <div class="content-desc">
+                        <p class="1">
+                            &#8250; Citizens of all foreign countries, without exception, have the right to receive an
+                            education at BMMI.
+                        </p>
+                        <p class="2">
+                            &#8250; Citizens of foreign countries, in the presence of (Certificate of 12 years of
+                            secondary education) have the right to<br>
+                            study the specialty programs, and wishing to enter submit a set of documents directly to the
+                            Admissions<br>
+                            Committee to participate in entrance examinations.
+                        </p>
+                        <p class="3">
+                            &#8250; Training of foreign nationals in the main educational programs of higher education
+                            is carried out on a full-time<br>
+                            basis on a contractual basis, with tuition fees paid by individuals and (or) legal entities.
+                            Training conditions on a<br>
+                            contractual basis are determined by the Agreement between the BMMI and the foreign citizen
+                            or his/her legal<br>
+                            representatives.
+                        </p>
+                        <p class="4">
+                            &#8250; Foreign nationals who submit knowingly false documents are automatically removed
+                            from the entrance<br>
+                            examinations and bear the responsibility stipulated by the legislation of the Kyrgyz
+                            Republic.
+                        </p>
+                        <p class="5">
+                            &#8250; Foreign citizens study in accordance with curricula and directions of specialty
+                            560001 "Medicine (specialist/<br>
+                            medical doctor) for foreign citizens with a term of study of 5 years, in which they were
+                            enrolled
+                        </p>
+                        <p class="6">
+                            &#8250; Date, place and form of introductory tests for foreign nationals are determined by
+                            the Admissions Committee.
+                        </p>
+                        <p class="7">
+                            &bull; Chemistry - <b>20</b> point<br>
+                            &bull; Biology - <b> 20 </b> point<br />
+                            &bull; English Language - <b> 20 </b> point<br />
+                        </p>
+                        <p class="8">
+                            <p class="desc"> Enrollment of foreign nationals is carried out within the terms and in the
+                                order<br>
+                                established by the Rules of admission to BMMI and the Ministry of Education and<br>
+                                Science of the Kyrgyz Republic, subject to the following conditions:</p><br>
+                            - provision of all necessary documents;<br>
+                            - successful passing of entrance examinations;<br>
+                            - Registration of the Contract with physical and (or) legal entities;<br>
+                            - payment of the contract amount.<br>
+                            <b>Enrollment of foreign citizens in BMMI is formalized by the order of the Rector</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="docs-to-invite" style="display: none;">
+                    <div class="desc-one">
+                        <h1>
+                            Applying for admission to BIMI
+                        </h1>
+                        <p1>
+                            When applying for admission to BIMI, a foreign citizen submits the following<br>
+                            documents:
+                        </p1>
+
+                        <p class="1"> &#8250; Original and copy of the passport, its certified translation into Russian;
+                        </p>
+                        <p class="2"> &#8250; A copy of the certificate of 12 years of secondary general education; </p>
+                        <p class="3"> &#8250; 1 photo 3 * 4 cm;</p>
+                    </div>
+
+                    <div class="desc-two">
+                        <h1 class="title">
+                            When applying for admission to BIMI, a foreign citizen submits the
+                            following documents legalized in accordance with the legislation of the Kyrgyz Republic:
+                        </h1>
+                        <p class="desc">
+                            &#8250; An application addressed to the rector (to be completed on the spot); <br />
+                            &#8250; Original and copy of the passport, its certified translation into Russian;<br />
+                            &#8250; A copy of the last visa and registration;<br />
+                            &#8250; The original and a copy of the document on the appropriate level of education,
+                            indicating the subjects studied and grades,
+                            its certified translation into Russian; <br />
+                            &#8250; A certificate of the equivalence of the level of education issued by the Ministry of
+                            Education and Science of the Kyrgyz Republic
+                            (except for those who have a certificate of secondary education of the Kyrgyz Republic);
+                            <br />
+                            &#8250; A medical certificate (form No. 086 / y) with the results of tests for HIV, viral
+                            hepatitis B, C, D, malaria, and the result of fluorography;
+                            <br /> &#8250; 8 photographs measuring 3 * 4 cm;<br />
+                        </p>
+                        <p1>
+                            All translations into Russian must be made in the name and surname indicated on the entry
+                            visa.
+                        </p1>
+                    </div>
+
+                    <div class="desc-three">
+                        <h1>
+                            Official representative of BIMI
+                        </h1>
+                        <p1>
+                            Contact:
+                        </p1>
+                        <div class="contacts-desc">
+                            <p> Тел: +996 997 887 887 </p> <br />
+                            <p>
+                                <p1>Email </p1>: bimi_official@mail.ru
+                            </p><br />
+                            <p>
+                                <p1> Email </p1>: bimi.edu.kg@gmail.com
+                            </p><br />
+                            <p1> Working hours </p1> <br />
+                            <p> <b> From Monday to Saturday </b> : 8:30-17:30; </p> <br />
+                            <p> <b> Address </b>: Shabdan Batyra -4, Bishkek, “720022” Kyrgyz Republic </p> <br />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="after-arrival" style="display:none ;">
+                    <h1> Applying after arrival</h1>
+                    <p1>
+                        Upon arrival, a foreign citizen submits the following documents legalized in<br> accordance with
+                        the legislation of the Kyrgyz Republic:
+                    </p1>
+                    <p>
+                        &#8250; Application addressed to the rector; <br>
+                        &#8250; Original and copy of the passport, its certified translation into Russian; <br>
+                        &#8250; A copy of the primary visa and registration that meet the requirements of the
+                        legislation of the Kyrgyz Republic;<br>
+                        &#8250; The original and a copy of the document on the appropriate level of education,
+                        indicating the subjects studied and grades,
+                        its certified translation into Russian;<br>
+                        &#8250; A certificate of the equivalence of the level of education issued by the Ministry of
+                        Education and Science of the Kyrgyz Republic;<br>
+                        &#8250; Medical certificate (form No. 086 / y) with the results of HIV tests, viral hepatitis B,
+                        C, D, malaria, and the result of fluorography;<br>
+                        &#8250; 8 photographs measuring 3х4 cm;<br>
+                        &#8250; Other necessary documents on the requirements of the country of origin for the admission
+                        of foreign citizens to foreign medical universities<br>
+
+                        <b>All translations into Russian must be made in the name and surname indicated on the entry
+                            visa.</b>
+                    </p>
+                </div>
+
+                <div class="invite-statement" style="display:none ;">
+                    <h1>APPLY FOR ADMISSION</h1>
+                    <p>
+                        BMMI is looking for candidates from around the world who want a quality medical education.
+                        Training in the specialty "Medicine" is conducted by the specialist programs and lasts 5 years.
+                        The graduate is awarded the qualification "Physician”
+                    </p>
+                    <div class="personal-area-content">
+                        <h1>Apply using your personal account</h1>
+
+                        <p class="btn">APPLY NOW</p>
+                    </div>
+
+                    <div class="consultation">
+                        <h1>
+                            Consultation with<br>
+                            the admissions committee
+                        </h1>
+                        <div class="contacts">
+                            <p1>
+                                Contact:
+                            </p1>
+                            <div class="contacts-desc">
+                                <p> Тел: +996 997 887 887 </p> <br />
+                                <p>
+                                    <p1>Email </p1>: bimi_official@mail.ru
+                                </p><br />
+                                <p>
+                                    <p1> Email </p1>: bimi.edu.kg@gmail.com
+                                </p><br />
+                                <p1> Working hours </p1> <br />
+                                <p> <b> From Monday to Saturday </b> : 8:30-17:30; </p> <br />
+                                <p> <b> Address </b>: From Monday to Saturday </p>
+                                <br />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="normatives-title">
-            <h1>Normative documents</h1>
-        </div>
-
-        <div class="image-block">
-            <div class=""><a href="###"><img src=".././img/normativesEng-img1.png" alt=""></a></div>
-            <div class=""><a href="###"><img src=".././img/normativesEng-img2.png" class="tunorm"></a></div>
-            <div class=""><a href="###"><img src=".././img/normativesEng-img3.png" alt=""></a></div>
-            <div class=""><a href="###"><img src=".././img/normativesEng-img4.png" alt=""></a></div>
-        </div>
-
+        <img src="../img/abiturients-img.png" class="end-img" alt="">
         <footer>
             <div class="footer-slide-content">
                 <div class="footer-left">
@@ -293,8 +532,8 @@
                 </div>
             </div>
         </footer>
-    </div>
 
+    </div>
 </body>
 
 </html>

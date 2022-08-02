@@ -330,6 +330,14 @@ header .logo {
     width: 3%;
 }
 
+header .navbar-science-text{
+    font-family: 'PT Serif',  sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: context-menu;
+    
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -355,7 +363,8 @@ header .logo {
 
 .lang-menu .selected-lang:before {
     content: '';
-    display: inline-block;
+    display: block;
+    margin-right: 10px;
     width: 32px;
     height: 32px;
     background-image: url(../../img/russian_flag.png);
@@ -817,6 +826,8 @@ footer .footer-slide-content .footer-left .footer-watermark{
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font-family: 'PT sans';
+    font-size: 12px;
 }
 
 footer .footer-slide-content .footer-left .left-desc .left{
