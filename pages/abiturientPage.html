@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../static/css/abiturientPage.css">
+</head>
+
+<body>
+    <div class="main--page-block">
+        <div class="header-nav-block">
+            <div class="header">
+                <header>
+                    <div class="header-logo-name">
+                        <a href="./mainPage.html"><img src="../img/Logo PNG.png" alt=""></a>
+                        <div class="header-name">
+                            <a href="./mainPage.html" style="text-decoration: none; color: #1c41b0;">
+                                <p>Бишкекский Международный Медицинский Институт</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lang-menu">
+                        <div class="selected-lang">
+                            Ru
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="./mainPage.html" class="ru">Ru</a>
+                            </li>
+                            <li>
+                                <a href="./mainPageEng.html" class="en">En</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="header-exit">
+                        <a href="./lkabiturient.html"><img src="../img/exit_icon.png" alt=""></a>
+                    </div>
+                </header>
+            </div>
+            <div class="navbar">
+                <div class="navbar-top">
+                    <div class="user--info-block">
+                        <div class="avatar"><img src="../img/avatar.png" alt=""></div>
+                        <p>Вадим Сергеев</p>
+                    </div>
+                </div>
+                <div class="navbar-title">
+                    <p>Абитуриенты</p>
+                </div>
+                <div class="navbar-navigate-block">
+                    <a href="./mainPage.html" class="nav-home">Главная</a>
+                    <p class="nav-adm1" onclick="
+                    document.querySelector('.application-block').style.display='flex'
+                    ">Заявки</p>
+                    <p class="nav-test">Вступительный тест</p>
+                    <p class="nav-adm2">Приложения</p>
+                    <a href="./normatives.html" class="nav-normatives">Нормативные документы</a>
+                    <a href="./contact.html" class="nav-cont">Контакты</a>
+                </div>
+            </div>
+        </div>
+        <div class="application-block" style="display: none;">
+            <div class="application-top">
+                <h1>Заявки</h1>
+                <p style="cursor: pointer;" onclick="
+                document.querySelector('.application-block').style.display='none'
+                document.querySelector('.online-application-block').style.display='block'
+                ">Заполнить</p>
+            </div>
+            <div class="application-list">
+                <p>У вас нет поданных онлайн-заявок.</p>     
+            </div>
+        </div>
+
+        <div class="online-application-block" style="display: none;">
+            <div class="online-application-title">
+                <h2>Подача онлайн-заявки</h2>
+            </div>
+            <div class="online-application-stages">
+                <div class="stage1"><h6>1</h6><p>Основная информация</p></div>
+                <div class="stage2"><h6>2</h6><p>Подборка конкурсов</p></div>
+                <div class="stage3"><h6>3</h6><p>Форма заявки</p></div>
+            </div>
+            <div class="online-info-block">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

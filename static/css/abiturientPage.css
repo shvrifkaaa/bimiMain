@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Serif';
+    background: #f3f6ff;
+    /* font-family: monospace; */
+}
+
+.main--page-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-nav-block {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 9vh;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header {
+    width: 82%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    background: white;
+
+    box-shadow: 0 0 10px 0;
+}
+
+header .header-logo-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 46%;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+header .header-logo-name img {
+    width: 80px;
+    height: 65px;
+}
+
+header .header-logo-name .header-name {
+    width: 74%;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #1c41b0;
+    font-family: monospace;
+}
+
+.header-exit {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 13px;
+    width: 7%;
+}
+
+.header-exit img {
+    width: 24px;
+}
+
+.lang-menu {
+    display: flex;
+    width: 32%;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.lang-menu .selected-lang:before {
+    content: '';
+    display: block;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/russian_flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ru:before {
+    background-image: url(../../img/russian_flag.png);
+}
+
+.en:before {
+    background-image: url(../../img/us_flag.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 98.8vh;
+    background: #2857FE;
+}
+
+.user--info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 96%;
+    height: 23.5vh;
+}
+
+.user--info-block p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+
+    color: #FFFFFF;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.navbar-title {
+    display: flex;
+    height: 14vh;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.navbar-title p {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 26px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+
+.navbar-navigate-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-home {
+    text-decoration: none;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+    background: url(../../img/personal_home.png) no-repeat center left 5px;
+    background-size: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #FFFFFF;
+}
+
+.nav-adm1 {
+    text-decoration: none;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 26px;
+    cursor: pointer;
+    color: #FFFFFF;
+
+    background: url(../../img/personal_bumaga.png) no-repeat center left 5px;
+    background-size: 15px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #FFFFFF;
+}
+
+.nav-test {
+    text-decoration: none;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 26px;
+    cursor: pointer;
+    color: #FFFFFF;
+
+    background: url(../../img/personal_bumaga.png) no-repeat center left 5px;
+    background-size: 15px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #FFFFFF;
+}
+
+.nav-adm2 {
+    text-decoration: none;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+    background: url(../../img/personal_bumaga.png) no-repeat center left 5px;
+    background-size: 15px;
+    padding-left: 30px;
+    padding-top: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #FFFFFF;
+}
+
+.nav-normatives {
+    text-decoration: none;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    background: url(../../img/personal_humans.png) no-repeat center left 5px;
+    background-size: 18px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #FFFFFF;
+}
+
+.nav-cont {
+    text-decoration: none;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    background: url(../../img/personal_humans.png) no-repeat bottom left 5px;
+    background-size: 18px;
+    padding-left: 30px;
+    padding-top: 24px;
+    margin-left: 20px;
+
+}
+
+.application-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 30vh;
+    padding-left: 20%;
+}
+
+.application-top h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+
+    color: #2857FE;
+}
+
+.application-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 95%;
+    height: 15vh;
+    margin-top: 4%;
+}
+
+.application-top p {
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+
+    background: #2857FE;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.application-list {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 40vh;
+    margin-top: 50px;
+
+    border-radius: 10px;
+    background: #DDE4FF;
+}
+
+.application-list p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #2857FE;
+    background: url(../../img/info_img.png) no-repeat center left 5px;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-left: 23px;
+}
+
+.online-application-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 82vh;
+    padding-left: 20%;
+}
+
+.online-application-title {
+    margin-top: 27px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 41px;
+
+    color: #2857FE;
+}
+
+.online-application-stages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 13.7vh;
+    width: 96%;
+    background: #2857FE;
+    box-shadow: 0px 0px 15px rgba(40, 87, 254, 0.05);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.stage1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 27%;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.stage1 h6 {
+    padding-top: 10px;
+    height: 39px;
+    width: 39px;
+    text-align: center;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+}
+
+.stage1 p{
+    margin-top: 10px;
+}
+
+.stage2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 27%;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    height: 14vh;
+}
+
+.stage2 h6 {
+    padding-top: 10px;
+    height: 39px;
+    width: 39px;
+    text-align: center;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+}
+
+.stage3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 23%;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.stage3 h6 {
+    padding-top: 10px;
+    height: 39px;
+    width: 39px;
+    text-align: center;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+}
+
+.stage3 p{
+    margin-top: 10px;
+}
+
+.online-info-block{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 37vh;
+
+    margin-top: 15px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
