@@ -329,6 +329,14 @@ header .logo {
     width: 3%;
 }
 
+header .navbar-science-text{
+    font-family: 'PT Serif',  sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: context-menu;
+    
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -419,10 +427,9 @@ header .logo {
 }
 
 .tabs-list {
-    position: absolute;
-    left: 5%;
-    top: 12%;
-
+    display: flex;
+    justify-content: right;
+    width: 22.5%;
     font-family: PT Sans;
     font-size: 14px;
     font-weight: 400;
@@ -442,20 +449,19 @@ header .logo {
 }
 
 .normatives-title {
-    position: absolute;
-    left: 5%;
-    top: 15.4%;
-    height: 54px;
-    width: 684px;
+    display: flex;
+    justify-content: right;
+    width: 34%;
+    height: 8.2vh;
 
 }
 
 .image-block {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    padding-left: 63px;
-    padding-top: 140px;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 95px;
 }
 
 .image-block img {
@@ -515,6 +521,7 @@ footer .footer-slide-content .footer-left .footer-watermark{
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font-size: 12px; font-family: 'PT sans';
 }
 
 footer .footer-slide-content .footer-left .left-desc .left{

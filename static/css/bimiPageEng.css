@@ -184,7 +184,7 @@ header .navbar .navbar-students:hover>.navbar-students-dropdown {
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 46vh;
+    height: 32vh;
     width: 18%;
     box-shadow: 5px;
 }
@@ -328,6 +328,14 @@ header .navbar .navbar-science .navbar-science-text svg {
 
 header .logo {
     width: 3%;
+}
+
+header .navbar-science-text{
+    font-family: 'PT Serif',  sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: context-menu;
+    
 }
 
 .nav {
@@ -817,6 +825,7 @@ footer .footer-slide-content .footer-left .footer-watermark{
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font-size: 12px; font-family: 'PT sans';
 }
 
 footer .footer-slide-content .footer-left .left-desc .left{

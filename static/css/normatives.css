@@ -330,6 +330,14 @@ header .logo {
     width: 3%;
 }
 
+header .navbar-science-text{
+    font-family: 'PT Serif',  sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: context-menu;
+    
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -432,7 +440,6 @@ header .logo {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0em;
 }
 
 .normatives-title h1 {
@@ -515,6 +522,9 @@ footer .footer-slide-content .footer-left .footer-watermark{
     margin-left: 50px;
     padding-top: 25px;
     border-top: .5px solid #bbb;
+    font-size: 12px;
+    font-family: 'PT sans';
+    
 }
 
 footer .footer-slide-content .footer-left .left-desc .left{
