@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'PT Serif'; */
+    background: #f3f6ff;
+    font-family: monospace;
+}
+
+.news--page-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.opened-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 24%;
+
+    margin-top: 25px;
+}
+
+.tabs-list {
+
+
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.news-title h1 {
+    font-family: PT Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: left;
+    color: #000;
+
+}
+
+.news-title p {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #1C41B0;
+}
+
+.news-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 16vh;
+    width: 57%;
+    padding-left: 5%;
+}
+
+.img-block img{
+    width: 21.7%;
+    height: 27.5vh;
+}
+
+.img-block{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1%; padding-left: 2%;
+    width: 100%;
+}
