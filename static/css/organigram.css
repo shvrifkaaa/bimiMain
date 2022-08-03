@@ -437,6 +437,7 @@ header .navbar-science-text{
 .opened-tabs{
     width: 88%;
     height: 22vh;
+    margin: 25px 0;
 
     display: flex;
     flex-direction: column;

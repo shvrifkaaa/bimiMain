@@ -338,9 +338,10 @@ header .logo {
 }
 
 header .navbar-science-text{
-    font-family: 'PT Serif',  sans-serif;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+    color: #494848;
     cursor: context-menu;
     
 }

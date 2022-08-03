@@ -24,7 +24,7 @@ body {
 
 .header-nav-block {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 100%;
     height: 9vh;
 }
@@ -49,7 +49,8 @@ header {
     z-index: 100;
     background: white;
 
-    box-shadow: 0 0 10px 0;
+    -webkit-box-shadow: 0px 10px 10px -7px #000000, 0px 5px 10px -6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px -7px #000000, 0px 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 header .header-logo-name {
@@ -172,9 +173,10 @@ header .header-logo-name .header-name {
 
 .navbar {
     display: flex;
+    position: fixed;
     flex-direction: column;
-    width: 22%;
-    height: 98.8vh;
+    width: 18%;
+    height: 95.8vh;
     background: #2857FE;
 }
 
@@ -380,6 +382,12 @@ header .header-logo-name .header-name {
     padding-right: 10px;
 }
 
+.application-top p:hover {
+    background: #6A8BFF;
+    transition: 0.2s ease;
+}
+
+
 .application-list {
     display: flex;
     align-items: center;
@@ -460,11 +468,11 @@ header .header-logo-name .header-name {
     border-radius: 15px;
 }
 
-.stage1 p{
+.stage1 p {
     margin-top: 10px;
 }
 
-.stage2{
+.stage2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -492,7 +500,11 @@ header .header-logo-name .header-name {
     border-radius: 15px;
 }
 
-.stage3{
+.stage2 p {
+    margin-top: 2px;
+}
+
+.stage3 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -515,11 +527,11 @@ header .header-logo-name .header-name {
     border-radius: 15px;
 }
 
-.stage3 p{
+.stage3 p {
     margin-top: 10px;
 }
 
-.online-info-block{
+.online-info-block {
     display: flex;
     flex-direction: column;
     width: 96%;
@@ -528,4 +540,436 @@ header .header-logo-name .header-name {
     margin-top: 15px;
     background: #FFFFFF;
     border-radius: 15px;
+}
+
+.first-point {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 40%;
+    margin-left: 4%;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+.first-point span {
+    margin-top: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.first-point h6 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.first-point b {
+    color: red;
+}
+
+.second-point {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 40%;
+    margin-left: 4%;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.second-point span {
+    margin-top: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.second-point h6 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.second-point b {
+    color: red;
+}
+
+.third-point {
+    display: flex;
+    flex-direction: column;
+    height: 7vh;
+    width: 90%;
+    margin-left: 4%;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.third-point h6 {
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+/* Скрыть флажок HTML по умолчанию */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Ползунок */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Закругленные ползунки */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.online-btn-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 94%;
+    height: 10vh;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.online-back-btn {
+    background: #FF3F3F;
+    border-radius: 10px;
+    padding: 11px 20px 11px 20px;
+}
+
+.online-back-btn:hover{
+    background: #FF6161;
+    transition: 0.2s ease ;
+}
+
+.online-furter-btn {
+    background: #2857FE;
+    border-radius: 10px;
+    padding: 11px 20px 11px 20px;
+}
+
+.online-furter-btn:hover{
+    background: #6A8BFF;
+    transition: 0.2s ease;
+}
+
+.selection-contests-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 84vh;
+    padding-left: 20%;
+}
+
+.contests-application-stages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 13.7vh;
+    width: 96%;
+    background: #2857FE;
+    box-shadow: 0px 0px 15px rgba(40, 87, 254, 0.05);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.con-stage1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 27%;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    background: url(../../img/abiturientPageGalka.png) no-repeat center left 5px;
+    background-size: 40px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.con-stage1 p {
+    margin-bottom: 16px;
+}
+
+.contests-country-block {
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 20vh;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(40, 87, 254, 0.05);
+    border-radius: 15px;
+}
+
+.contests-speciality-block {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    height: 28.6vh;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(40, 87, 254, 0.05);
+    border-radius: 15px;
+}
+
+.contests-speciality-title-left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 21vh;
+    margin-left: 48px;
+    justify-content: flex-end;
+}
+
+.contests-speciality-title-left h3 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+
+    color: #5A5A5A;
+}
+
+.contests-speciality-title-left span {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #5A5A5A;
+    margin-bottom: 30px;
+}
+
+.contests-speciality-title-left p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+
+    background: url(../../img/users-contests-abiturient.png) no-repeat center left 5px;
+    background-size: 15px;
+    padding-left: 30px;
+}
+
+.contests-speciality-title-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 38%;
+    height: 19vh;
+    margin-left: 48px;
+}
+
+.contests-speciality-title-right p {
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+    background: #2857FE;
+    border-radius: 10px;
+    padding: 2px 5px 2px 7px;
+    margin-bottom: 10%;
+}
+
+.switch1 {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 27px;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+/* Скрыть флажок HTML по умолчанию */
+.switch1 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Ползунок */
+.sslider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.sslider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 1px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.sslider {
+    background-color: #2196F3;
+}
+
+input:focus+.sslider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.sslider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Закругленные ползунки */
+.sslider.round {
+    border-radius: 34px;
+}
+
+.sslider.round:before {
+    border-radius: 50%;
+}
+
+.contests-btn-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 94%;
+    height: 10vh;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.contests-back-btn {
+    background: #FF3F3F;
+    border-radius: 10px;
+    padding: 11px 20px 11px 20px;
+}
+
+.contests-back-btn:hover{
+    background: #FF6161;
+    transition: 0.2s ease ;
+}
+
+.contests-furter-btn {
+    background: #2857FE;
+    border-radius: 10px;
+    padding: 11px 20px 11px 20px;
+}
+
+.contests-furter-btn:hover{
+    background: #6A8BFF;
+    transition: 0.2s ease;
 }
