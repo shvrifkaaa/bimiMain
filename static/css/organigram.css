@@ -444,14 +444,6 @@ header .navbar-science-text{
     justify-content: center;
 }
 
-.tabs-list {
-
-    font-family: PT Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
-}
 .tabs-list{
     font-size: 14px;
     font-weight: 400;
@@ -626,13 +618,13 @@ header .navbar-science-text{
 }
 
 .admins-cards .admins-content{
-    width: 88%;
+    width: 89%;
 
     border-radius: 20px;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
 }
 .admins-cards .admins-content .admins-card{
@@ -646,8 +638,12 @@ header .navbar-science-text{
     border-radius: 10px;
     box-shadow: 0px 0px 24px rgba(0, 108, 180, 0.15);
 
-    margin-bottom: 18px;
+    margin: 9px 6px;
 }
+.admins-cards .admins-content .admins-card img{
+    width: 100%;
+}
+
 .admins-cards .admins-content .admins-card .card-desc{
     width: 95%;
     height: 35%;
