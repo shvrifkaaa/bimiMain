@@ -57,6 +57,9 @@
                 <div class="navbar-navigate-block">
                     <a href="./mainPage.html" class="nav-home">Главная</a>
                     <p class="nav-adm1" onclick="
+                    document.querySelector('.selection-contests-block').style.display='none'
+                    document.querySelector('.online-application-block').style.display='none'
+
                     document.querySelector('.application-block').style.display='flex'
                     ">Заявки</p>
                     <p class="nav-test">Вступительный тест</p>
@@ -71,11 +74,11 @@
                 <h1>Заявки</h1>
                 <p style="cursor: pointer;" onclick="
                 document.querySelector('.application-block').style.display='none'
-                document.querySelector('.online-application-block').style.display='block'
+                document.querySelector('.online-application-block').style.display='flex'
                 ">Заполнить</p>
             </div>
             <div class="application-list">
-                <p>У вас нет поданных онлайн-заявок.</p>     
+                <p>У вас нет поданных онлайн-заявок.</p>
             </div>
         </div>
 
@@ -84,12 +87,86 @@
                 <h2>Подача онлайн-заявки</h2>
             </div>
             <div class="online-application-stages">
-                <div class="stage1"><h6>1</h6><p>Основная информация</p></div>
+                <div class="stage1">
+                    <h6>1</h6>
+                    <p>Основная информация</p>
+                </div>
+                <div class="stage2">
+                    <h6>2</h6>
+                    <p>Подборка конкурсов</p>
+                </div>
+                <div class="stage3">
+                    <h6>3</h6>
+                    <p>Форма заявки</p>
+                </div>
+            </div>
+            <div class="online-info-block">
+                <div class="first-point">
+                    <h6>У меня уже есть академическая квалификация <b>*</b> </h6>
+                    <span><input type="radio" id="checkmark"> Среднее базовое образование (12 лет)</span>
+                </div>
+                <div class="second-point">
+                    <h6>Я хочу поступить на образовательные программы <b>*</b> </h6>
+                    <span><input type="radio" id="checkmark2"> Программы специалитета</span>
+                </div>
+
+                <div class="third-point">
+                    <b>Прошу разрешить мне самостоятельно сдавать вступительные испытания, организованные
+                        университетом.</b>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="online-btn-block">
+                <p class="online-back-btn" style="cursor: pointer;" onclick="
+                document.querySelector('.online-application-block').style.display='none'
+                document.querySelector('.application-block').style.display='flex'
+                ">Назад</p>
+                <p class="online-furter-btn" style="cursor: pointer;" onclick="
+                document.querySelector('.online-application-block').style.display='none'
+                document.querySelector('.selection-contests-block').style.display='flex'
+                ">Далее</p>
+            </div>
+        </div>
+
+        <div class="selection-contests-block" style="display: none;">
+            <div class="contests-application-stages">
+                <div class="con-stage1"><p>Основная информация</p></div>
                 <div class="stage2"><h6>2</h6><p>Подборка конкурсов</p></div>
                 <div class="stage3"><h6>3</h6><p>Форма заявки</p></div>
             </div>
-            <div class="online-info-block">
+            <div class="contests-country-block">
                 
+            </div>
+
+            <div class="contests-speciality-block">
+                <div class="contests-speciality-title-left">
+                    <h3>Лечебное дело (англ.) / General medicine (Eng)</h3>
+                    <span> Специалитет Лечебное дело (№560001) очно, 5 лет</span>
+                    <p>Количество мест: 350</p>
+                </div>
+                <div class="contests-speciality-title-right">
+                    <p>Full-time</p>
+
+                    <label class="switch1">
+                    <input type="checkbox">
+                    <span class="sslider round"></span>
+                </label>
+                </div>
+                
+            </div>
+            <div class="contests-btn-block">
+                <p class="contests-back-btn" style="cursor: pointer;" onclick="
+                document.querySelector('.selection-contests-block').style.display='none'
+                document.querySelector('.online-application-block').style.display='flex'
+                ">Назад</p>
+                <p class="contests-furter-btn" style="cursor: pointer;" onclick="
+                document.querySelector('.selection-contests-block').style.display='none'
+                document.querySelector('.select-contest-block').style.display='flex'
+                ">Далее</p>
             </div>
         </div>
     </div>
