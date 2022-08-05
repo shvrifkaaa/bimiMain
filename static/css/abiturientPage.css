@@ -716,9 +716,9 @@ input:checked+.slider:before {
     padding: 11px 20px 11px 20px;
 }
 
-.online-back-btn:hover{
+.online-back-btn:hover {
     background: #FF6161;
-    transition: 0.2s ease ;
+    transition: 0.2s ease;
 }
 
 .online-furter-btn {
@@ -727,7 +727,7 @@ input:checked+.slider:before {
     padding: 11px 20px 11px 20px;
 }
 
-.online-furter-btn:hover{
+.online-furter-btn:hover {
     background: #6A8BFF;
     transition: 0.2s ease;
 }
@@ -845,7 +845,7 @@ input:checked+.slider:before {
     padding-left: 30px;
 }
 
-.contests-speciality-title-right{
+.contests-speciality-title-right {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -958,9 +958,9 @@ input:checked+.sslider:before {
     padding: 11px 20px 11px 20px;
 }
 
-.contests-back-btn:hover{
+.contests-back-btn:hover {
     background: #FF6161;
-    transition: 0.2s ease ;
+    transition: 0.2s ease;
 }
 
 .contests-furter-btn {
@@ -969,7 +969,616 @@ input:checked+.sslider:before {
     padding: 11px 20px 11px 20px;
 }
 
-.contests-furter-btn:hover{
+.contests-furter-btn:hover {
+    background: #6A8BFF;
+    transition: 0.2s ease;
+}
+
+
+.select-contest-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 208.5vh;
+    padding-left: 20%;
+}
+
+.contest-application-stages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 13.7vh;
+    width: 97%;
+    background: #2857FE;
+    box-shadow: 0px 0px 15px rgba(40, 87, 254, 0.05);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.cont-stage1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 27%;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    background: url(../../img/abiturientPageGalka.png) no-repeat center left 5px;
+    background-size: 40px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.cont-stage1 p {
+    margin-bottom: 16px;
+}
+
+.contest-info-block {
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    height: 194.5vh;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(40, 87, 254, 0.05);
+    border-radius: 15px;
+}
+
+.full-name-title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 32px 0px 0px 11px;
+
+    color: #000000;
+}
+
+.full-name-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 13vh;
+    margin-top: 15px;
+}
+
+.full-name-block input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.full-name {
+    width: 31.7%;
+}
+
+.full-first {
+    width: 31.7%;
+}
+
+.full-middle {
+    width: 31.7%;
+}
+
+.full-name-block b {
+    color: red;
+}
+
+.full-id-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height: 26vh;
+}
+
+.full-id-title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 16px 0px 0px 11px;
+
+    color: #000000;
+}
+
+.full-id-block-left1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    height: 24vh;
+    margin-left: 10px;
+}
+
+.full-id-block-left1 input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.full-id-block-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    height: 24vh;
+    margin-left: 15px;
+}
+
+.full-id-block-right input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.full-id-block-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    height: 24vh;
+}
+
+.full-id-block-bottop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 11vh;
+    margin-left: 10px;
+}
+
+.full-id-block-bottop input {
+    height: 45px;
+    width: 97%;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.division-code-id {
+    width: 27.9%;
+}
+
+.who-issued-id {
+    width: 96.3%;
+    margin-left: 15px;
+}
+
+.full-id-block-botbot {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    margin-left: 10px;
+}
+
+.full-id-block-botbot input {
+    width: 21.5%;
+    height: 45px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.issue-id {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.full-id-block b {
+    color: red;
+}
+
+.full-id-block-bottom b {
+    color: red;
+}
+
+.prove-doc-title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 26px 0px 0px 11px;
+
+    color: #000000;
+}
+
+.contest-info-block p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+}
+
+.prove-doc-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 29vh;
+}
+
+.prove-doc-geo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px 0px 13px;
+    width: 97.5%;
+    height: 10vh;
+}
+
+.prove-doc-geo input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.prove-doc-country {
+    width: 47%;
+}
+
+.prove-doc-local {
+    width: 47%;
+}
+
+.education-opt {
+    margin-left: 14px;
+}
+
+.prove-doc-educate {
+    display: flex;
+    flex-direction: column;
+    width: 97.7%;
+    height: 10vh;
+    margin-left: 11 px;
+    margin-top: 15px;
+}
+
+.education-info {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+
+    margin-left: 11px;
+    margin-top: 10px;
+    padding: 15px 0px 15px 16px;
+    width: 100%;
+}
+
+.accomotation-title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 16px 0px 0px 11px;
+
+    color: #000000;
+}
+
+.accomidation-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 16vh;
+}
+
+.switch2 {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 27px;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+/* Скрыть флажок HTML по умолчанию */
+.switch2 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Ползунок */
+.ssslider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.ssslider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 1px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.ssslider {
+    background-color: #2196F3;
+}
+
+input:focus+.ssslider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.ssslider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Закругленные ползунки */
+.ssslider.round {
+    border-radius: 34px;
+}
+
+.ssslider.round:before {
+    border-radius: 50%;
+}
+
+.accomidation-slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.accomidation-slider p {
+    margin-top: 3.5%;
+    margin-left: 1%;
+}
+
+.kin-title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 16px 0px 0px 11px;
+
+    color: #000000;
+}
+
+.kin-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 23vh;
+}
+
+.kin-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 13vh;
+}
+
+.kinship-select select {
+    height: 45px;
+    width: 98%;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.kinship-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    height: 12vh;
+    margin-left: 11px;
+
+}
+
+.kin-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 73%;
+    height: 12vh;
+    margin-left: 12px;
+}
+
+.kin-info input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.switch3 {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 27px;
+    margin-left: 1%;
+}
+
+/* Скрыть флажок HTML по умолчанию */
+.switch3 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Ползунок */
+.sssslider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.sssslider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 1px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.sssslider {
+    background-color: #2196F3;
+}
+
+input:focus+.sssslider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.sssslider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Закругленные ползунки */
+.sssslider.round {
+    border-radius: 34px;
+}
+
+.sssslider.round:before {
+    border-radius: 50%;
+}
+
+.kin-slider{
+    display: flex;
+    flex-direction: row;
+}
+
+.kin-slider p{
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+
+.prove-doc-block b{
+    color: red;
+}
+
+.kin-block b{
+    color: red;
+}
+
+.select-contact-title{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 25px 0px 0px 11px;
+
+    color: #000000; 
+}
+
+.contest-btn-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 94%;
+    height: 10vh;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.contest-back-btn {
+    background: #FF3F3F;
+    border-radius: 10px;
+    padding: 11px 20px 11px 20px;
+}
+
+.contest-back-btn:hover {
+    background: #FF6161;
+    transition: 0.2s ease;
+}
+
+.contest-furter-btn {
+    background: #2857FE;
+    border-radius: 10px;
+    padding: 11px 20px 11px 20px;
+}
+
+.contest-furter-btn:hover {
     background: #6A8BFF;
     transition: 0.2s ease;
 }

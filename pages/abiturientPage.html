@@ -59,6 +59,7 @@
                     <p class="nav-adm1" onclick="
                     document.querySelector('.selection-contests-block').style.display='none'
                     document.querySelector('.online-application-block').style.display='none'
+                    document.querySelector('.select-contest-block').style.display='none'
 
                     document.querySelector('.application-block').style.display='flex'
                     ">Заявки</p>
@@ -134,12 +135,20 @@
 
         <div class="selection-contests-block" style="display: none;">
             <div class="contests-application-stages">
-                <div class="con-stage1"><p>Основная информация</p></div>
-                <div class="stage2"><h6>2</h6><p>Подборка конкурсов</p></div>
-                <div class="stage3"><h6>3</h6><p>Форма заявки</p></div>
+                <div class="con-stage1">
+                    <p>Основная информация</p>
+                </div>
+                <div class="stage2">
+                    <h6>2</h6>
+                    <p>Подборка конкурсов</p>
+                </div>
+                <div class="stage3">
+                    <h6>3</h6>
+                    <p>Форма заявки</p>
+                </div>
             </div>
             <div class="contests-country-block">
-                
+
             </div>
 
             <div class="contests-speciality-block">
@@ -152,11 +161,11 @@
                     <p>Full-time</p>
 
                     <label class="switch1">
-                    <input type="checkbox">
-                    <span class="sslider round"></span>
-                </label>
+                        <input type="checkbox">
+                        <span class="sslider round"></span>
+                    </label>
                 </div>
-                
+
             </div>
             <div class="contests-btn-block">
                 <p class="contests-back-btn" style="cursor: pointer;" onclick="
@@ -165,10 +174,176 @@
                 ">Назад</p>
                 <p class="contests-furter-btn" style="cursor: pointer;" onclick="
                 document.querySelector('.selection-contests-block').style.display='none'
+                document.querySelector('.main--page-block').style.height='230vh'
                 document.querySelector('.select-contest-block').style.display='flex'
                 ">Далее</p>
             </div>
         </div>
+
+        <div class="select-contest-block" style="display: none;">
+            <div class="contest-application-stages">
+                <div class="cont-stage1">
+                    <p>Основная информация</p>
+                </div>
+                <div class="stage2">
+                    <h6>2</h6>
+                    <p>Подборка конкурсов</p>
+                </div>
+                <div class="stage3">
+                    <h6>3</h6>
+                    <p>Форма заявки</p>
+                </div>
+            </div>
+
+            <div class="contest-info-block">
+                <h4 class="full-name-title">Полное имя</h4>
+                <div class="full-name-block">
+                    <div class="full-name">
+                        <p>Имя <b>*</b></p>
+                        <input type="text" required>
+                    </div>
+                    <div class="full-first">
+                        <p>Фамилия <b>*</b></p>
+                        <input type="text" required>
+                    </div>
+                    <div class="full-middle">
+                        <p>Отчество <b>*</b> </p>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <h4 class="full-id-title">Идентификационная карта</h4>
+                <div class="full-id-block">
+                    <div class="full-id-block-left1">
+                        <div class="type-id">
+                            <p>Тип ID <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+                        <div class="serial-num-id" style="margin-top: 10px;">
+                            <p>Серийный номер <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="full-id-block-right">
+                        <div class="citizen-id">
+                            <p>Гражданство <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+                        <div class="num-id" style="margin-top: 10px;">
+                            <p>Номер <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="full-id-block-bottom">
+                    <div class="full-id-block-bottop">
+                        <div class="division-code-id">
+                            <p>Код подразделения <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+                        <div class="who-issued-id">
+                            <p>Кто выдал ID <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="full-id-block-botbot">
+                        <div class="issue-id">
+                            <form action="">
+                                <p>Дата выпуска <b>*</b></p>
+                                <input type="date" name="calendar" value="дд.мм.гггг" min="2015-01-01" max="2035-01-01"
+                                    required>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h4 class="prove-doc-title">Документ, подтверждающий полученное образование</h4>
+                <div class="prove-doc-block">
+                    <div class="prove-doc-geo">
+                        <div class="prove-doc-country">
+                            <p>Страна <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+                        <div class="prove-doc-local">
+                            <p>Местонахождение <b>*</b></p>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="prove-doc-educate">
+                        <div class="education-opt">
+                            <p>"Образовательное учреждение" <b>*</b></p>
+                        </div>
+                        <p class="education-info">12 лет основного среднего образования <b>*</b></p>
+                    </div>
+                </div>
+                <div class="accomidation-block">
+                    <h4 class="accomotation-title">Студенческая гостиница</h4>
+                    <div class="accomidation-slider">
+                        <label class="switch2">
+                            <input type="checkbox">
+                            <span class="ssslider round"></span>
+                        </label>
+                        <p>Мне нужно студенческое общежитие</p>
+                    </div>
+                </div>
+                <div class="kin-block">
+                    <h4 class="kin-title">Ближайший родственник</h4>
+                    <div class="kin-top">
+                        <div class="kinship-select">
+                            <p>Степень родства</p>
+                            <select required>
+                                <option value="1">Мать</option>
+                                <option value="2">Отец</option>
+                                <option value="3">Дедушка</option>
+                                <option value="4">Бабушка</option>
+                            </select>
+                        </div>
+                        <div class="kin-info">
+                            <div class="kin-name">
+                                <p>Имя <b>*</b></p>
+                                <input type="text" required>
+                            </div>
+                            <div class="kin-first">
+                                <p>Фамилия <b>*</b></p>
+                                <input type="text" required>
+                            </div>
+                            <div class="kin-middle">
+                                <p>Отчество <b>*</b></p>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kin-bottom">
+                        <div class="kin-slider">
+                            <label class="switch3">
+                                <input type="checkbox">
+                                <span class="sssslider round"></span>
+                            </label>
+                            <p>Укажите данные второго родственника</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-contact-info-block">
+                    <h4 class="select-contact-title">Ваши Контактные Данные</h4>
+                </div>
+            </div>
+                <div class="contest-btn-block">
+                    <p class="contest-back-btn" style="cursor: pointer;" onclick="
+                    document.querySelector('.main--page-block').style.height='100vh'
+                    document.querySelector('.select-contest-block').style.display='none'
+                    document.querySelector('.selection-contests-block').style.display='flex'
+                    ">Назад</p>
+                    <p class="contest-furter-btn" style="cursor: pointer;" onclick="
+                    document.querySelector('.select-contest-block').style.display='none'
+                    document.querySelector('.main--page-block').style.height='130vh'
+                    document.querySelector('.application-form-block').style.display='flex'
+                    ">Далее</p>
+                </div>
+
+        </div>
+
     </div>
 </body>
 
