@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет</title>
-    <link rel="stylesheet" href="../static/css/abiturientPage.css">
+    <title>Personal area</title>
+    <link rel="stylesheet" href="../static/css/abiturientPageEng.css">
 </head>
 
 <body>
@@ -15,24 +15,25 @@
             <div class="header">
                 <header>
                     <div class="header-logo-name">
-                        <a href="./mainPage.html"><img src="../img/Logo PNG.png" alt=""></a>
+                        <a href="./mainPageEng.html"><img src="../img/Logo PNG.png" alt=""></a>
                         <div class="header-name">
-                            <a href="./mainPage.html" style="text-decoration: none; color: #1c41b0;">
-                                <p>Бишкекский Международный Медицинский Институт</p>
+                            <a href="./mainPageEng.html" style="text-decoration: none; color: #1c41b0;">
+                                <p>BISHKEK INTERNATIONAL
+                                    MEDICAL INSTITUTE</p>
                             </a>
                         </div>
                     </div>
 
                     <div class="lang-menu">
                         <div class="selected-lang">
-                            Ru
+                            En
                         </div>
                         <ul>
                             <li>
-                                <a href="" class="ru">Ru</a>
+                                <a href="./abiturientPage.html" class="ru">Ru</a>
                             </li>
                             <li>
-                                <a href="./abiturientPageEng.html" class="en">En</a>
+                                <a href="" class="en">En</a>
                             </li>
 
                         </ul>
@@ -40,7 +41,7 @@
                     </div>
 
                     <div class="header-exit">
-                        <a href="./lkabiturient.html"><img src="../img/exit_icon.png" alt=""></a>
+                        <a href="./lkabiturientEng.html"><img src="../img/exit_icon.png" alt=""></a>
                     </div>
                 </header>
             </div>
@@ -48,14 +49,14 @@
                 <div class="navbar-top">
                     <div class="user--info-block">
                         <div class="avatar"><img src="../img/avatar.png" alt=""></div>
-                        <p>Вадим Сергеев</p>
+                        <p>Vadim Sergeev</p>
                     </div>
                 </div>
                 <div class="navbar-title">
-                    <p>Абитуриенты</p>
+                    <p>Abiturients</p>
                 </div>
                 <div class="navbar-navigate-block">
-                    <a href="./mainPage.html" class="nav-home">Главная</a>
+                    <a href="./mainPage.html" class="nav-home">Main</a>
                     <p class="nav-adm1" onclick="
                     document.querySelector('.main--page-block').style.height='100vh'
                     document.querySelector('.application-form-block').style.display='none'
@@ -65,58 +66,57 @@
                     document.querySelector('.select-contest-block').style.display='none'
 
                     document.querySelector('.application-block').style.display='flex'
-                    ">Заявки</p>
-                    <p class="nav-test">Вступительный тест</p>
-                    <p class="nav-adm2">Приложения</p>
-                    <a href="./normatives.html" class="nav-normatives">Нормативные документы</a>
-                    <a href="./contact.html" class="nav-cont">Контакты</a>
+                    ">Applications</p>
+                    <p class="nav-test">Admission test</p>
+                    <p class="nav-adm2">Applications</p>
+                    <a href="./normativesEng.html" class="nav-normatives">Normative documents</a>
+                    <a href="./contactEng.html" class="nav-cont">Contacts</a>
                 </div>
             </div>
         </div>
         <div class="application-block" style="display: none;">
             <div class="application-top">
-                <h1>Заявки</h1>
+                <h1>Applications</h1>
                 <p style="cursor: pointer;" onclick="
                 document.querySelector('.application-block').style.display='none'
                 document.querySelector('.online-application-block').style.display='flex'
-                ">Заполнить</p>
+                ">Apply</p>
             </div>
             <div class="application-list">
-                <p>У вас нет поданных онлайн-заявок.</p>
+                <p>You have no online applications submitted.</p>
             </div>
         </div>
 
         <div class="online-application-block" style="display: none;">
             <div class="online-application-title">
-                <h2>Подача онлайн-заявки</h2>
+                <h2>Submitting an online application</h2>
             </div>
             <div class="online-application-stages">
                 <div class="stage1">
                     <h6>1</h6>
-                    <p>Основная информация</p>
+                    <p>Main information</p>
                 </div>
                 <div class="stage2">
                     <h6>2</h6>
-                    <p>Подборка конкурсов</p>
+                    <p>Selection of contests</p>
                 </div>
                 <div class="stage3">
                     <h6>3</h6>
-                    <p>Форма заявки</p>
+                    <p>Application form</p>
                 </div>
             </div>
             <div class="online-info-block">
                 <div class="first-point">
-                    <h6>У меня уже есть академическая квалификация <b>*</b> </h6>
-                    <span><input type="radio" id="checkmark"> Среднее базовое образование (12 лет)</span>
+                    <h6>I already have an academic qualification <b>*</b> </h6>
+                    <span><input type="radio" id="checkmark"> Secondary basic education (12 years)</span>
                 </div>
                 <div class="second-point">
-                    <h6>Я хочу поступить на образовательные программы <b>*</b> </h6>
-                    <span><input type="radio" id="checkmark2"> Программы специалитета</span>
+                    <h6>I want to enroll in educational programs <b>*</b> </h6>
+                    <span><input type="radio" id="checkmark2"> Specialist programs</span>
                 </div>
 
                 <div class="third-point">
-                    <b>Прошу разрешить мне самостоятельно сдавать вступительные испытания, организованные
-                        университетом.</b>
+                    <b>Please allow me to take the admission tests organized by the University independently</b>
                 </div>
                 <label class="switch">
                     <input type="checkbox">
@@ -128,43 +128,45 @@
                 <p class="online-back-btn" style="cursor: pointer;" onclick="
                 document.querySelector('.online-application-block').style.display='none'
                 document.querySelector('.application-block').style.display='flex'
-                ">Назад</p>
+                ">Cancel</p>
                 <p class="online-furter-btn" style="cursor: pointer;" onclick="
                 document.querySelector('.online-application-block').style.display='none'
                 document.querySelector('.selection-contests-block').style.display='flex'
-                ">Далее</p>
+                ">Furter</p>
             </div>
         </div>
 
         <div class="selection-contests-block" style="display: none;">
             <div class="contests-application-stages">
                 <div class="con-stage1">
-                    <p>Основная информация</p>
+                    <p>Main information</p>
                 </div>
                 <div class="stage2">
                     <h6>2</h6>
-                    <p>Подборка конкурсов</p>
+                    <p>Selection of contests</p>
                 </div>
                 <div class="stage3">
                     <h6>3</h6>
-                    <p>Форма заявки</p>
+                    <p>Main information</p>
                 </div>
             </div>
             <div class="contests-country-block">
-                <div class="contests-country-title"><p>Страна пребывания</p></div>
+                <div class="contests-country-title">
+                    <p>Country of residence</p>
+                </div>
                 <div class="contests-search-country">
                     <select name="search-country" required>
-                        <option value="1">Кыргызстан</option>
+                        <option value="1">Kyrgyzstan</option>
                     </select>
                 </div>
-                
+
             </div>
 
             <div class="contests-speciality-block">
                 <div class="contests-speciality-title-left">
                     <h3>Лечебное дело (англ.) / General medicine (Eng)</h3>
                     <span> Специалитет Лечебное дело (№560001) очно, 5 лет</span>
-                    <p>Количество мест: 350</p>
+                    <p>Number of places: 350</p>
                 </div>
                 <div class="contests-speciality-title-right">
                     <p>Full-time</p>
@@ -180,66 +182,66 @@
                 <p class="contests-back-btn" style="cursor: pointer;" onclick="
                 document.querySelector('.selection-contests-block').style.display='none'
                 document.querySelector('.online-application-block').style.display='flex'
-                ">Назад</p>
+                ">Cancel</p>
                 <p class="contests-furter-btn" style="cursor: pointer;" onclick="
                 document.querySelector('.selection-contests-block').style.display='none'
                 document.querySelector('.main--page-block').style.height='230vh'
                 document.querySelector('.select-contest-block').style.display='flex'
-                ">Далее</p>
+                ">Furter</p>
             </div>
         </div>
 
         <div class="select-contest-block" style="display: none;">
             <div class="contest-application-stages">
                 <div class="cont-stage1">
-                    <p>Основная информация</p>
+                    <p>Main information</p>
                 </div>
                 <div class="stage2">
                     <h6>2</h6>
-                    <p>Подборка конкурсов</p>
+                    <p>Selection of contests</p>
                 </div>
                 <div class="stage3">
                     <h6>3</h6>
-                    <p>Форма заявки</p>
+                    <p>Application form</p>
                 </div>
             </div>
 
             <div class="contest-info-block">
-                <h4 class="full-name-title">Полное имя</h4>
+                <h4 class="full-name-title">Full Name</h4>
                 <div class="full-name-block">
                     <div class="full-name">
-                        <p>Имя <b>*</b></p>
+                        <p>Name <b>*</b></p>
                         <input type="text" required>
                     </div>
                     <div class="full-first">
-                        <p>Фамилия <b>*</b></p>
+                        <p>First name <b>*</b></p>
                         <input type="text" required>
                     </div>
                     <div class="full-middle">
-                        <p>Отчество <b>*</b> </p>
+                        <p>Middle name <b>*</b> </p>
                         <input type="text" required>
                     </div>
                 </div>
-                <h4 class="full-id-title">Идентификационная карта</h4>
+                <h4 class="full-id-title">Identification card</h4>
                 <div class="full-id-block">
                     <div class="full-id-block-left1">
                         <div class="type-id">
-                            <p>Тип ID <b>*</b></p>
+                            <p>Type of ID <b>*</b></p>
                             <input type="text" required>
                         </div>
                         <div class="serial-num-id" style="margin-top: 10px;">
-                            <p>Серийный номер <b>*</b></p>
+                            <p>Serial number <b>*</b></p>
                             <input type="text" required>
                         </div>
                     </div>
 
                     <div class="full-id-block-right">
                         <div class="citizen-id">
-                            <p>Гражданство <b>*</b></p>
+                            <p>Citizenship <b>*</b></p>
                             <input type="text" required>
                         </div>
                         <div class="num-id" style="margin-top: 10px;">
-                            <p>Номер <b>*</b></p>
+                            <p>Number <b>*</b></p>
                             <input type="text" required>
                         </div>
 
@@ -248,19 +250,19 @@
                 <div class="full-id-block-bottom">
                     <div class="full-id-block-bottop">
                         <div class="division-code-id">
-                            <p>Код подразделения <b>*</b></p>
+                            <p>Division code <b>*</b></p>
                             <input type="text" required>
                         </div>
                         <div class="who-issued-id">
-                            <p>Кто выдал ID <b>*</b></p>
+                            <p>Who issued the ID <b>*</b></p>
                             <input type="text" required>
                         </div>
                     </div>
                     <div class="full-id-block-botbot">
                         <div class="issue-id">
                             <form action="">
-                                <p>Дата выпуска <b>*</b></p>
-                                <input type="date" name="calendar" value="дд.мм.гггг" min="2015-01-01" max="2035-01-01"
+                                <p>Date of issue <b>*</b></p>
+                                <input type="date" name="calendar" value="dd.mm.yyyy" min="2015-01-01" max="2035-01-01"
                                     required>
                             </form>
                         </div>
@@ -268,58 +270,58 @@
                     </div>
                 </div>
 
-                <h4 class="prove-doc-title">Документ, подтверждающий полученное образование</h4>
+                <h4 class="prove-doc-title">Document proving educational qualification obtained</h4>
                 <div class="prove-doc-block">
                     <div class="prove-doc-geo">
                         <div class="prove-doc-country">
-                            <p>Страна <b>*</b></p>
+                            <p>Country <b>*</b></p>
                             <input type="text" required>
                         </div>
                         <div class="prove-doc-local">
-                            <p>Местонахождение <b>*</b></p>
+                            <p>Locality <b>*</b></p>
                             <input type="text" required>
                         </div>
                     </div>
                     <div class="prove-doc-educate">
                         <div class="education-opt">
-                            <p>"Образовательное учреждение" <b>*</b></p>
+                            <p>"Educational institution" <b>*</b></p>
                         </div>
-                        <p class="education-info">12 лет основного среднего образования</p>
+                        <p class="education-info">12 years of basic secondary education</p>
                     </div>
                 </div>
                 <div class="accomidation-block">
-                    <h4 class="accomotation-title">Студенческая гостиница</h4>
+                    <h4 class="accomotation-title">Student accomodation</h4>
                     <div class="accomidation-slider">
                         <label class="switch2">
                             <input type="checkbox">
                             <span class="ssslider round"></span>
                         </label>
-                        <p>Мне нужно студенческое общежитие</p>
+                        <p>I need student accomodation</p>
                     </div>
                 </div>
                 <div class="kin-block">
-                    <h4 class="kin-title">Ближайший родственник</h4>
+                    <h4 class="kin-title">Next of kin</h4>
                     <div class="kin-top">
                         <div class="kinship-select">
-                            <p>Степень родства</p>
+                            <p>Degree of kinship</p>
                             <select required>
-                                <option value="1">Мать</option>
-                                <option value="2">Отец</option>
-                                <option value="3">Дедушка</option>
-                                <option value="4">Бабушка</option>
+                                <option value="1">Mother</option>
+                                <option value="2">Father</option>
+                                <option value="3">Grandmother</option>
+                                <option value="4">Grandfather</option>
                             </select>
                         </div>
                         <div class="kin-info">
                             <div class="kin-name">
-                                <p>Имя <b>*</b></p>
+                                <p>Name <b>*</b></p>
                                 <input type="text" required>
                             </div>
                             <div class="kin-first">
-                                <p>Фамилия <b>*</b></p>
+                                <p>First name <b>*</b></p>
                                 <input type="text" required>
                             </div>
                             <div class="kin-middle">
-                                <p>Отчество <b>*</b></p>
+                                <p>Middle name <b>*</b></p>
                                 <input type="text" required>
                             </div>
                         </div>
@@ -330,12 +332,12 @@
                                 <input type="checkbox">
                                 <span class="sssslider round"></span>
                             </label>
-                            <p>Укажите данные второго родственника</p>
+                            <p>Provide details of a second relative</p>
                         </div>
                     </div>
                 </div>
                 <div class="select-contact-info-block">
-                    <h4 class="select-contact-title">Ваши Контактные Данные</h4>
+                    <h4 class="select-contact-title">Your contact information</h4>
                 </div>
             </div>
             <div class="contest-btn-block">
@@ -343,76 +345,74 @@
                     document.querySelector('.main--page-block').style.height='100vh'
                     document.querySelector('.select-contest-block').style.display='none'
                     document.querySelector('.selection-contests-block').style.display='flex'
-                    ">Назад</p>
+                    ">Cancel</p>
                 <p class="contest-furter-btn" style="cursor: pointer;" onclick="
                     document.querySelector('.select-contest-block').style.display='none'
                     document.querySelector('.main--page-block').style.height='139vh'
                     document.querySelector('.application-form-block').style.display='flex'
-                    ">Далее</p>
+                    ">Furter</p>
             </div>
         </div>
         <div class="application-form-block" style="display: none;">
             <div class="form-application-stages">
                 <div class="form-stage1">
-                    <p>Основная информация</p>
+                    <p>Main information</p>
                 </div>
                 <div class="form-stage2">
-                    <p>Подборка конкурсов</p>
+                    <p>Selection of contests</p>
                 </div>
                 <div class="stage3">
                     <h6>3</h6>
-                    <p>Форма заявки</p>
+                    <p>Application form</p>
                 </div>
             </div>
             <div class="form-img-block">
                 <div class="form-id-card">
-                    <h4>Идентификационная карта <b>*</b></h4>
-                    <span>Вторая и третья страницы паспорта</span>
-                    
+                    <h4>Identification card <b>*</b></h4>
+                    <span>The second and third pages of the passport</span>
+
                     <div class="form-id-files">
-                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png"> 
-                        <label for="form-id">Выбрать файлы</label>
-                        <p>Файл не выбран</p>
+                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png">
+                        <label for="form-id">Choose file</label>
+                        <p>File not selected</p>
                     </div>
-                    <span class="form-id-span">Поддерживаются файлы в формате PDF, JPG, PNG до 5 Мб.</span>
+                    <span class="form-id-span">Files in the format PDF, JPG, PNG up to 5 Мб are supported.</span>
                 </div>
 
                 <div class="form-id-card">
-                    <h4>Страницы паспорта с постоянной регистрацией <b>*</b></h4>
-                    
+                    <h4>Passport pages with permanent registration <b>*</b></h4>
+
                     <div class="form-id-files">
-                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png"> 
-                        <label for="form-id">Выбрать файлы</label>
-                        <p>Файл не выбран</p>
+                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png">
+                        <label for="form-id">Choose file</label>
+                        <p>File not selected</p>
                     </div>
-                    <span class="form-id-span">Поддерживаются файлы в формате PDF, JPG, PNG до 5 Мб.</span>
+                    <span class="form-id-span">Files in the format PDF, JPG, PNG up to 5 Мб are supported.</span>
+                </div>
+                <div class="form-id-card">
+                    <h4>Educational certificate <b>*</b></h4>
+
+                    <div class="form-id-files">
+                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png">
+                        <label for="form-id">Choose file</label>
+                        <p>File not selected</p>
+                    </div>
+                    <span class="form-id-span">Files in the format PDF, JPG, PNG up to 5 Мб are supported.</span>
+                </div>
+                <div class="form-id-card">
+                    <h4>Appendix to the educational certificate<b>*</b></h4>
+
+                    <div class="form-id-files">
+                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png">
+                        <label for="form-id">Choose file</label>
+                        <p>File not selected</p>
+                    </div>
+                    <span class="form-id-span">Files in the format PDF, JPG, PNG up to 5 Мб are supported.</span>
                 </div>
 
                 <div class="form-id-card">
-                    <h4>Образовательный сертификат <b>*</b></h4>
-                    
-                    <div class="form-id-files">
-                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png"> 
-                        <label for="form-id">Выбрать файлы</label>
-                        <p>Файл не выбран</p>
-                    </div>
-                    <span class="form-id-span">Поддерживаются файлы в формате PDF, JPG, PNG до 5 Мб.</span>
-                </div>
+                    <h4>Consent to the processing of personal data * <b>*</b></h4>
 
-                <div class="form-id-card">
-                    <h4>Приложение к аттестату об образовании <b>*</b></h4>
-                    
-                    <div class="form-id-files">
-                        <input type="file" id="form-id" accept="image/jpg , image/pdf , image/png"> 
-                        <label for="form-id">Выбрать файлы</label>
-                        <p>Файл не выбран</p>
-                    </div>
-                    <span class="form-id-span">Поддерживаются файлы в формате PDF, JPG, PNG до 5 Мб.</span>
-                </div>
-
-                <div class="form-id-card">
-                    <h4>Согласие на обработку персональных данных <b>*</b></h4>
-                    
                     <div class="form-id-slider">
                         <label class="switch3">
                             <input type="checkbox">
@@ -426,9 +426,9 @@
                     document.querySelector('.main--page-block').style.height='230vh'
                     document.querySelector('.select-contest-block').style.display='flex'
                     document.querySelector('.application-form-block').style.display='none'
-                    ">Назад</p>
+                    ">Cancel</p>
                 <p class="application-ffurter-btn" style="cursor: pointer;" onclick="
-                    ">Далее</p>
+                    ">Furter</p>
             </div>
         </div>
 
