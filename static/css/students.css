@@ -11,7 +11,7 @@
 
 body {
     font-family: 'PT Serif';
-    background: #f3f6ff;
+    /* background: #f3f6ff; */
     /* font-family: monospace; */
 }
 
@@ -20,6 +20,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-image: url('../../img/students-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 30%;
+    background-size: 30%;
 }
 
 .header {
@@ -438,9 +443,8 @@ header .navbar-science-text{
 .tabs-list {
     font-family: PT Sans;
     font-size: 14px;
-    font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0em;
+    display: flex;
 }
 
 .news-title h1 {
@@ -517,6 +521,7 @@ header .navbar-science-text{
 .students-block .students-content .schedule-content{
     display: flex;
     flex-direction: column;
+    height: fit-content;
     
 }
 .students-block .students-content .schedule-content h1{
@@ -528,8 +533,682 @@ header .navbar-science-text{
     padding-bottom: 16px;
 }
 .students-block .students-content .schedule-content .content-side{
-    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-family: 'PT Sans';
+    margin-top: 15px;
+
+}
+.students-block .students-content .schedule-content .content-side h1{
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    border-bottom: 0;
+}
+.students-block .students-content .schedule-content .content-side h3{
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.students-block .students-content .schedule-content .content-side a{
+    width: fit-content;
+    text-decoration: none;
+    color: #2857fe;
+    font-size: 20px;
+    font-weight: 700;
+}
+.students-block .students-content .rating-content{
+    flex-direction: column;
+    height: fit-content;
+    
+}
+.students-block .students-content .rating-content h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'PT Sans';
+    color: #1c41b0;
+    border-bottom: 1px solid #1c41b0;
+    padding-bottom: 16px;
+}
+.students-block .students-content .rating-content .content-side{
+    margin-top: 35px;
+}
+.students-block .students-content .rating-content .content-side a{
+    width: fit-content;
+    text-decoration: none;
+    color: #2857fe;
+    font-size: 20px;
+    font-weight: 700;
+}
+.students-block .students-content .life-content{
+    flex-direction: column;
+    height: fit-content;
+    
+}
+.students-block .students-content .life-content h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'PT Sans';
+    color: #1c41b0;
+    border-bottom: 1px solid #1c41b0;
+    padding-bottom: 16px;
+}
+.students-block .students-content .life-content .content-side{
+    margin-top: 35px;
+}
+.students-block .students-content .life-content .content-side p{
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 700;
+    color: #666;
+}
+.students-block .students-content .program-content {
+    width: 142%;
+}
+.students-block .students-content .program-content .course-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.students-block .students-content .program-content .left-side{
+    width: 73%;
+    border-right: 1px solid #494848;
+    padding-right: 88px;
+
+}
+.students-block .students-content .program-content .left-side .desc{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'PT Sans';
+
+}
+.students-block .students-content .program-content .left-side .desc h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #1c41b0;
+}
+.students-block .students-content .program-content .left-side .desc p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f2149;
+}
+.students-block .students-content .program-content .left-side .desc-content{
+    margin-top: 35px;
+}
+.students-block .students-content .program-content .left-side .desc-content .year-btn{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.students-block .students-content .program-content .left-side .desc-content .year-btn div{
+    height: fit-content;
+}
+.students-block .students-content .program-content .left-side .desc-content .year-btn div a{
+    padding: 14px;
+    transition: .2s;
+    text-decoration: none;
+    border: .5px solid #2857fe;
+    color: #0f2149;
+    background: #f3f6ff;
+    font-family: 'PT Sans';
+}
+.students-block .students-content .program-content .left-side .desc-content .year-btn div a:hover{
+    color: #fff;
+    background: #2857fe;
+    transition: .2s;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc{
+    margin-top: 25px;
+    font-family: 'PT Sans';
+    flex-direction: column;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .title{
+    padding: 20px 0;
+    color: #1c41b0;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .first-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .first-semester{
+    display: flex;
+    flex-direction: column;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .first-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .first-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .first-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .first-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+
+
+
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .second-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .second-semester{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .second-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .second-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .second-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .first-year-desc .second-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc{
+    margin-top: 25px;
+    font-family: 'PT Sans';
+    flex-direction: column;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .title{
+    padding: 20px 0;
+    color: #1c41b0;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .first-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .first-semester{
+    display: flex;
+    flex-direction: column;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .first-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .first-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .first-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .first-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+
+
+
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .second-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .second-semester{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .second-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .second-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .second-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .second-year-desc .second-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc{
+    margin-top: 25px;
+    font-family: 'PT Sans';
+    flex-direction: column;
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .title{
+    padding: 20px 0;
+    color: #1c41b0;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .first-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .first-semester{
+    display: flex;
+    flex-direction: column;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .first-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .first-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .first-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .first-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+
+
+
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .second-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .second-semester{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .second-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .second-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .second-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .third-year-desc .second-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+
+
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc{
+    margin-top: 25px;
+    font-family: 'PT Sans';
+    flex-direction: column;
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .title{
+    padding: 20px 0;
+    color: #1c41b0;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .first-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .first-semester{
+    display: flex;
+    flex-direction: column;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .first-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .first-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .first-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .first-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+
+
+
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .second-semester-title{
+    width: 85%;
+    font-size:20px ;
+    font-weight:700 ;
+    color: #1c41b0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .semester-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .second-semester{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .second-semester .semester-cards .subject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #f3f6ff;
+    padding: 10px;
+    margin: 10px 0 ;
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .second-semester .semester-cards .subject-desc{
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -10px;
+    
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .second-semester .semester-cards .subject-desc p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'PT Sans';
+    padding: 10px;
+}
+.students-block .students-content .program-content .left-side .desc-content .four-year-desc .second-semester .semester-cards .subject-desc p1{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+.students-block .students-content .program-content .right-side{
+    width: 27%;
+    padding-left: 20px;
+    font-family: 'PT Sans';
+    padding-left: 20px;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .first-year-navbar{
+    display: flex;
+    flex-direction: column;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card h1{
+    font-size: 32px;
+    color: #1c41b0;
+    font-weight: 400;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .first-half{
+    display: flex;
+    flex-direction: column;
+    height: 46vh;
+    justify-content: space-evenly;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .first-half h1{
+    font-size: 24px;
+    font-weight: 400;
+    color: #1c41b0;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .first-half  .subject{
+    display: flex;  
+    flex-direction: column;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .first-half  .subject a{
+    padding: 4px 0;
+    width: fit-content;
+    text-decoration: none;
+    color: #0f2149;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s;
+
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .first-half  .subject a:hover{
+    color: #1c41b0;
+    transition: .3s;
+}
+
+.students-block .students-content .program-content .course-content .right-side .content-card .second-half{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: space-evenly;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .second-half h1{
+    font-size: 24px;
+    font-weight: 400;
+    color: #1c41b0;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .second-half  .subject{
+    display: flex;  
+    flex-direction: column;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .second-half  .subject a{
+    padding: 4px 0;
+    width: fit-content;
+    text-decoration: none;
+    color: #0f2149;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s;
+
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .second-half  .subject a:hover{
+    color: #1c41b0;
+    transition: .3s;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .second-year-navbar{
+    width: 109%;
+    flex-direction: column;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .second-year-navbar .first-half{
+    height: 61.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.students-block .students-content .program-content .course-content .right-side .content-card .third-year-navbar{
+    width: 109%;
+    flex-direction: column;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .third-year-navbar .first-half{
+    height: 67vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.students-block .students-content .program-content .course-content .right-side .content-card .four-year-navbar{
+    width: 109%;
+    flex-direction: column;
+}
+.students-block .students-content .program-content .course-content .right-side .content-card .four-year-navbar .first-half{
+    height: 61.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
