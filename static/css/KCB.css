@@ -316,16 +316,20 @@ header .navbar .navbar-abiturient .navbar-abiturient-text svg {
     margin-left: 5px;
 }
 
-header .navbar .navbar-science:hover .navbar-science-text svg {
-    transform: rotate(180deg);
-    transition: .5s;
+header .navbar .navbar-science .navbar-science-text a{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'PT Serif';
+    color: #494848;
+    transition: .2s;
+    cursor: default; 
 }
+header .navbar .navbar-science .navbar-science-text a:hover{
+    color: #2857fe;
+    transition: .2s;
 
-header .navbar .navbar-science .navbar-science-text svg {
-    transition: .5s;
-    margin-left: 5px;
 }
-
 header .logo {
     width: 3%;
 }

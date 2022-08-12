@@ -189,7 +189,7 @@ header .navbar .navbar-students:hover>.navbar-students-dropdown {
     align-items: flex-start;
     margin-top: 24px;
     background: white;
-    height: 46vh;
+    height: 30vh;
     width: 18%;
     box-shadow: 5px;
 }
@@ -376,7 +376,7 @@ header .navbar-science-text{
     margin-right: 10px;
     width: 32px;
     height: 32px;
-    background-image: url(../../img/russian_flag.png);
+    background-image: url(../../img/us_flag.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
