@@ -714,7 +714,19 @@ header .navbar-science-text{
     flex-direction: column;
     justify-content: space-evenly;
 }
-
+.managers-cards .managers-content .managers-card .card-desc .name{
+    font-size: 19px;
+    font-family: 'PT Serif';
+    color: #1c41b0;
+}
+.managers-cards .managers-content .managers-card .card-desc .post{
+    font-weight: 400;
+    font-family: 'PT Sans';
+}
+.managers-cards .managers-content .managers-card .card-desc .numb{
+    font-size: 14px;
+    font-family: 'PT Sans';
+} 
 .rector-more{
     width: 100%;
 
