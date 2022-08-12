@@ -301,7 +301,7 @@ header .navbar .navbar-science .navbar-science-text a{
     font-family: 'PT Serif';
     color: #494848;
     transition: .2s;
-    cursor: default;
+    cursor: default; 
 }
 header .navbar .navbar-science .navbar-science-text a:hover{
     color: #2857fe;
