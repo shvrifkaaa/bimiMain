@@ -136,12 +136,10 @@
                 <a href="mainPageEng.html" style="text-decoration: none;color: #6d8ce9;">Main &#9656;</a>
                 <a href="studentsEng.html" style="text-decoration: none ;color: #6d8ce9;">Students &#9656;</a>
                 <a href="####" style="text-decoration: none ;color: #1c41b0;" class="schedule-tab">Schedule</a>
-                <a href="####" style="text-decoration: none ;color: #1c41b0; display: none;"
-                    class="rating-tab">Point-rating system </a>
-                <a href="####" style="text-decoration: none ;color: #1c41b0; display: none;" class="life-tab">Students
-                    life </a>
-                <a href="####" style="text-decoration: none ;color: #1c41b0; display: none;" class="program-tab">5 year
-                    study program </a>
+                <a href="####" style="text-decoration: none ;color: #1c41b0; display: none;" class="rating-tab">Point-rating system </a>
+                <a href="####" style="text-decoration: none ;color: #1c41b0; display: none;" class="life-tab">Students life </a>
+                <a href="####" style="text-decoration: none ;color: #1c41b0; display: none;" class="questionnaire-tab">Questionnaire </a>
+                <a href="####" style="text-decoration: none ;color: #1c41b0; display: none;" class="mail-tab">Trust Box</a>
             </div>
         </div>
         <div class="students-block">
@@ -149,6 +147,7 @@
                 <h1>Students</h1>
                 <div class="navbar-content">
                     <p class="schedule" style="color:#1c41b0; font-weight: 700;" onclick="
+
                     document.querySelector('.schedule-content').style.display='flex';
                     document.querySelector('.schedule').style.fontWeight=700;
                     document.querySelector('.schedule').style.color='#1c41b0';
@@ -158,26 +157,48 @@
                     document.querySelector('.rating').style.fontWeight=400;
                     document.querySelector('.rating-tab').style.display='none'
                     document.querySelector('.rating-content').style.display='none'
+
                     document.querySelector('.life').style.color='#636363';
                     document.querySelector('.life').style.fontWeight=400;
                     document.querySelector('.life-content').style.display='none';
                     document.querySelector('.life-tab').style.display='none'
-                    ">Schedule</p>
 
+                    document.querySelector('.questionnaire').style.color='#636363'
+                    document.querySelector('.questionnaire').style.fontWeight=400
+                    document.querySelector('.questionnaire-content').style.display='none'
+                    document.querySelector('.questionnaire-tab').style.display='none'
+
+                    document.querySelector('#mail').style.color='#636363'
+                    document.querySelector('#mail').style.fontWeight=400
+                    document.querySelector('.mail-tab').style.display='none'
+                    document.querySelector('.mail-content').style.display='none'
+                    ">Schedule</p>
                     <p class="rating" onclick="
                     document.querySelector('.rating-content').style.display='flex';
                     document.querySelector('.rating').style.fontWeight=700;
                     document.querySelector('.rating').style.color='#1c41b0';
                     document.querySelector('.rating-tab').style.display='flex'
+
                     
                     document.querySelector('.schedule').style.color='#636363';
                     document.querySelector('.schedule').style.fontWeight=400;
                     document.querySelector('.schedule-content').style.display='none';
                     document.querySelector('.schedule-tab').style.display='none'
+
                     document.querySelector('.life').style.color='#636363';
                     document.querySelector('.life').style.fontWeight=400;
                     document.querySelector('.life-content').style.display='none';
                     document.querySelector('.life-tab').style.display='none'
+
+                    document.querySelector('.questionnaire').style.color='#636363'
+                    document.querySelector('.questionnaire').style.fontWeight=400
+                    document.querySelector('.questionnaire-content').style.display='none'
+                    document.querySelector('.questionnaire-tab').style.display='none'
+
+                    document.querySelector('#mail').style.color='#636363'
+                    document.querySelector('#mail').style.fontWeight=400
+                    document.querySelector('.mail-tab').style.display='none'
+                    document.querySelector('.mail-content').style.display='none'
                     "> Point-rating system</p>
                     <p class="life" onclick="
                     document.querySelector('.life-content').style.display='flex';
@@ -189,35 +210,28 @@
                     document.querySelector('.schedule').style.fontWeight=400;
                     document.querySelector('.schedule-content').style.display='none';
                     document.querySelector('.schedule-tab').style.display='none'
+
                     document.querySelector('.rating').style.color='#636363'
                     document.querySelector('.rating').style.fontWeight=400;
                     document.querySelector('.rating-tab').style.display='none'
                     document.querySelector('.rating-content').style.display='none'
+
+                    document.querySelector('.questionnaire').style.color='#636363'
+                    document.querySelector('.questionnaire').style.fontWeight=400
+                    document.querySelector('.questionnaire-content').style.display='none'
+                    document.querySelector('.questionnaire-tab').style.display='none'
+
+                    document.querySelector('#mail').style.color='#636363'
+                    document.querySelector('#mail').style.fontWeight=400
+                    document.querySelector('.mail-tab').style.display='none'
+                    document.querySelector('.mail-content').style.display='none'
                     ">Students life</p>
                     <p class="program" onclick="
                     document.querySelector('.program-tab').style.display='flex'
                     document.querySelector('.navbar-block').style.display='none'
                     document.querySelector('.program-content').style.display='flex';
-                    document.querySelector('.life').style.color='#636363';
-                    document.querySelector('.life').style.fontWeight=400;
-                    document.querySelector('.life-content').style.display='none';
-                    document.querySelector('.life-tab').style.display='none'
-                    
-                    document.querySelector('.schedule').style.color='#636363';
-                    document.querySelector('.schedule').style.fontWeight=400;
-                    document.querySelector('.schedule-content').style.display='none';
-                    document.querySelector('.schedule-tab').style.display='none'
-                    document.querySelector('.rating').style.color='#636363'
-                    document.querySelector('.rating').style.fontWeight=400;
-                    document.querySelector('.rating-tab').style.display='none'
-                    document.querySelector('.rating-content').style.display='none'
-                    ">Curriculum</p>
-                    <p class="anketing" onclick="
-                    document.querySelector('.questionnaire').style.color='#1c41b0'
-                    document.querySelector('.questionnaire').style.fontWeight=700
-                    document.querySelector('.questionnaire-content').style.display='flex'
-                    document.querySelector('.questionnaire-tab').style.display='flex'
-                    
+
+
                     document.querySelector('.life').style.color='#636363';
                     document.querySelector('.life').style.fontWeight=400;
                     document.querySelector('.life-content').style.display='none';
@@ -233,17 +247,43 @@
                     document.querySelector('.rating-tab').style.display='none'
                     document.querySelector('.rating-content').style.display='none'
 
-                    document.querySelector('.mail').style.color='#636363'
-                    document.querySelector('.mail').style.fontWeight=400
+                    document.querySelector('.questionnaire-content').style.display='none'
+                    document.querySelector('.questionnaire-tab').style.display='none'
+
                     document.querySelector('.mail-tab').style.display='none'
                     document.querySelector('.mail-content').style.display='none'
-                    ">Questionnaire</p>
-                    <p class="mail" onclick="
+                    ">Curriculum</p>
+                    <p class="questionnaire" onclick="
+                        document.querySelector('.questionnaire').style.color='#1c41b0'
+                        document.querySelector('.questionnaire').style.fontWeight=700
+                        document.querySelector('.questionnaire-content').style.display='flex'
+                        document.querySelector('.questionnaire-tab').style.display='flex'
+                        
+                        document.querySelector('.life').style.fontWeight=400;
+                        document.querySelector('.life-content').style.display='none';
+                        document.querySelector('.life-tab').style.display='none';
+                        document.querySelector('.life').style.color='#636363';
+                        
+                        document.querySelector('.schedule').style.color='#636363';
+                        document.querySelector('.schedule').style.fontWeight=400;
+                        document.querySelector('.schedule-content').style.display='none';
+                        document.querySelector('.schedule-tab').style.display='none';
 
-                        document.querySelector('.mail-content').style.display='flex'
-                        document.querySelector('.mail-tab').style.display='flex'
-                        document.querySelector('.mail').style.color='#1c41b0'
-                        document.querySelector('.mail').style.fontWeight=700
+                        document.querySelector('.rating').style.color='#636363';
+                        document.querySelector('.rating').style.fontWeight=400;
+                        document.querySelector('.rating-tab').style.display='none';
+                        document.querySelector('.rating-content').style.display='none';
+
+                        document.querySelector('#mail').style.color='#636363';
+                        document.querySelector('#mail').style.fontWeight=400;
+                        document.querySelector('.mail-tab').style.display='none';
+                        document.querySelector('.mail-content').style.display='none';
+                    ">Questionnaire</p>
+                    <p id="mail" onclick="
+                        document.querySelector('.mail-content').style.display='flex';
+                        document.querySelector('.mail-tab').style.display='flex';
+                        document.querySelector('#mail').style.color='#1c41b0';
+                        document.querySelector('#mail').style.fontWeight=700;
 
                         document.querySelector('.life').style.color='#636363';
                         document.querySelector('.life').style.fontWeight=400;
@@ -264,7 +304,7 @@
                         document.querySelector('.questionnaire').style.fontWeight=400
                         document.querySelector('.questionnaire-content').style.display='none'
                         document.querySelector('.questionnaire-tab').style.display='none'
-                    "> Trust box</p>
+                    "> Trust Box</p>
                 </div>
             </div>
             <div class="students-content">
@@ -288,7 +328,6 @@
                         <p>This page is under construction!</p>
                     </div>
                 </div>
-
                 <div class="program-content" style="display: none;">
                     <div class="course-content">
                         <div class="left-side">
@@ -7266,19 +7305,19 @@
                 </div>
                 <div class="questionnaire-content" style="display: none;">
                     <div class="questionnaire-anketing">
-                        <h1>Анкетирование</h1>
+                        <h1>Questionnaire</h1>
                         <div class="content-side-title">
-                            <h1>Бишкекский Международный Медицинский Институт</h1>
-                            <p>Уважаемые студенты!</p>
+                            <h1>Bishkek International Medical Institute</h1>
+                            <p>Dear student!</p>
                         </div>
                         <div class="content-side-desc">
                             <p>
-                                Мы будем признательны, если Вы объективно ответите на наши анкеты! <br>
-                                Эти данные будут полезны для улучшения работы Института. <br>
-                                Будьте независимы и высказывайте только свое мнение: просьба ни с кем не советоваться
-                                при
-                                заполнении анкеты! <br>
-                                Заранее благодарим за помощь! <br>
+                                Your rating is very important to us! <br>
+                                We will be grateful if you objectively answer all the questions of our questionnaire! <br>
+                                Be independent and express only your own opinion: please do not consult with anyone while filling out the questionnaire!
+                                The questionnaire is anonymous (i.e. without indicating the student's full name), its results will be used in a generalized form and without any consequences for the student. <br>   
+                                Be independent and <p1> express only your own opinion: please do not consult with anyone while 
+                                filling out the questionnaire!</p1>
                             </p>
                         </div>
                         <div class="content-side-links">
@@ -7286,52 +7325,53 @@
                             document.querySelector('.student-questionnaire').style.display='flex'
                             document.querySelector('.questionnaire-anketing').style.display='none'
 
-                        ">&bull;Анкета для студента первого курса</a>
+                        ">&bull;Questionnaire for a first-year student</a>
 
                             <a href="####" onclick="
                                 document.querySelector('.teacher-questionnaire').style.display='flex'
                                 document.querySelector('.questionnaire-anketing').style.display='none'
                             
-                            ">&bull;Анкета преподаватель глазами студентов </a>
+                            ">&bull;Teacher through the eyes of students</a>
                         </div>
                     </div>
                     <div class="student-questionnaire" style="display: none;">
 
-                        <h1>Анкета для студента первого курса</h1>
+                        <h1>Questionnaire</h1>
                         <div class="student-side-title">
                             <h1>
-                                Бишкекский Международный Медицинский Институт
+                                Bishkek International Medical Institute
                             </h1>
                             <h2>
-                                Анкета для студента первого курса
+                                Questionnaire for a first-year student
                             </h2>
                             <p>
-                                Уважаемый студент!
+                                Dear student!
                             </p>
                         </div>
                         <div class="student-side-desc">
                             <p>
-                                Уважаемые студенты-первокурсники! <br>
-                                Спасибо Вам, за то, что Вы выбрали наше учебное заведение! <br>
-                                Мне хотелось бы больше узнать о Вас, Ваших увлечениях, интересах. <br>
-                                Полученные сведения будут использованы только в обобщенном виде для совершенствования
-                                нашего с Вами общения
+                                Dear first-year students! <br>
+                                Thank you for choosing our school! <br>
+                                I would like to know more about you, your hobbies and interests. <br>
+                                The information received will only be used in aggr egate form to improve our
+                                communication with you.
+
                             </p>
                         </div>
                         <div class="student-side-links">
-                            <p class="link">Ссылка для прохождения:
+                            <p class="link">Link to pass:
                                 <a href="https://forms.gle/FsMgkA8iotykzp1N7"> https://forms.gle/FsMgkA8iotykzp1N7 </a>
                             </p>
                             <p class="desc">
-                                Постарайтесь заполнить анкету добросовестно, руководствуясь нормами этики и морали.
+                                Try to fill out the questionnaire in good faith, guided by the norms of ethics and morality.
                             </p>
-                            <p class="thanks">СПАСИБО!</p>
+                            <p class="thanks">THANKS!</p>
                         </div>
                         <div class="go-back" style="cursor: pointer; width: fit-content;">
                             <p class="back" onclick="
                             document.querySelector('.student-questionnaire').style.display='none'
                             document.querySelector('.questionnaire-anketing').style.display='flex'
-                            "> › Назад </p>
+                            "> › Go back </p>
                         </div>
                     </div>
                     <div class="teacher-questionnaire" style="display: none;">
@@ -7339,33 +7379,31 @@
                         <h1>Анкета проподаватель глазами студентов</h1>
                         <div class="teacher-side-title">
                             <h1>
-                                Бишкекский Международный Медицинский Институт
+                                Bishkek International Medical Institute
                             </h1>
                             <h2>
-                                Анкета “Преподаватель глазами студентов”
-
+                                Questionnaire “Teacher through the eyes of students”
 
                             </h2>
                             <p>
-                                Уважаемый студент!
+                                Dear student!
                             </p>
                         </div>
                         <div class="teacher-side-desc">
                             <p>
-                                С целью изучения качества преподавания учебных дисциплин и профессионального мастерства
-                                преподавателей просим Вас ответить на вопросы по итогам семестра. Анкетирование
-                                анонимное (т.е. без указания ФИО студента), его результаты будут использоваться в
-                                обобщенном виде и без каких-либо последствий для студента.
+                                In order to study the quality of teaching academic disciplines and the professional
+                                skills of teachers, we ask you to answer questions at the end of the semester. The
+                                questionnaire is anonymous (i.e. without indicating the student's full name), its
+                                results will be used in a generalized form and without any consequences for the student.
                             </p>
-                        </div>Ссылка для прохождения:
+                        </div>
                         <div class="teacher-side-links">
-                            <p class="link">Ссылка для прохождения:
+                            <p class="link">Link to pass:
                                 <a href="https://forms.gle/149MLbXwzehS4BoVA"> https://forms.gle/149MLbXwzehS4BoVA </a>
                             </p>
                             <p class="desc">
-                                Постарайтесь заполнить анкету добросовестно, руководствуясь нормами этики и морали.
-                            </p>
-                            <p class="thanks">СПАСИБО!</p>
+                                Try to fill out the questionnaire in good faith, guided by the norms of ethics and morality.                            </p>
+                            <p class="thanks">THANKS!</p>
                         </div>
                         <div class="go-back" style="cursor: pointer; width: fit-content;">
                             <p class="back" onclick="
@@ -7376,23 +7414,23 @@
                     </div>
                 </div>
                 <div class="mail-content" style="display: none;">
-                    <p class="desc">Здесь Вы можете обратится к администрации анонимно.</p>
+                    <p class="desc">Here you can contact the administration anonymously</p>
                     <p class="mail">
-                        <p1>E-mail:</p1> trust.box@bimi.edu.kg
+                        <p1>E-mail: </p1>trust.box@bimi.edu.kg
                     </p>
                     <form action="">
-                        <label for="name" class="name">Имя (необязательно)</label>
+                        <label for="name" class="name">Name (optionally)</label>
                         <input type="text" name="name id="">
 
-                        <label for=" Email class="name">Email (необязательно)</label>
+                        <label for=" Email class="name">Email (optionally)</label>
                         <input type="text" name="Email" id="">
 
-                        <label for="desc">Сообщение </label>
+                        <label for="desc">Message </label>
                         <textarea name="desc id="" cols=" 30" rows="6"></textarea>
 
                     </form>
                     <div class="send-btn">
-                        <a href="####">Отправить</a>
+                        <a href="####">Send</a>
                     </div>
                 </div>
             </div>
